@@ -8,7 +8,7 @@ Aulas publicadas/programadas
 
 * [01 - Introdução + Arquitetura](01_introducao_arquitetura/README.md)
 * [02 - Ambiente de desenvolvimento](02_ambiente-desenvolvimento/README.md)
-* 03 - Primeira app (Hello World)
+* [03 - Primeira app (Hello World)](03_criando-primeiro-projeto/README.md)
 * 04 - Introdução ao Typescript para Angular
 * 05 - Módulos (ngModule)
 * 06 - Templates
