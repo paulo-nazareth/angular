@@ -9,7 +9,7 @@ Aulas publicadas/programadas
 * [01 - Introdução + Arquitetura](01_introducao_arquitetura/README.md)
 * [02 - Ambiente de desenvolvimento](02_ambiente-desenvolvimento/README.md)
 * [03 - Primeira app (Hello World)](03_criando-primeiro-projeto/README.md)
-* 04 - Introdução ao Typescript para Angular
+* [04 - Introdução ao Typescript para Angular](04_typescript-para-angular/README.md)
 * 05 - Módulos (ngModule)
 * 06 - Templates
 * 07 - Serviços (Services) e Injeção de dependência (DI)
@@ -187,3 +187,9 @@ http://loiane.training/curso/angular/
 Clique aqui para assistir a todos os vídeos já publicados
 
 https://www.youtube.com/playlist?list=PLGxZ4Rq3BOBoSRcKWEdQACbUCNWLczg2G
+
+### Pré-requisitos
+
+- HTML
+- CSS
+- JavaScript
