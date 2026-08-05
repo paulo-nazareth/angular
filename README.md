@@ -19,6 +19,8 @@ Repositorio Angular, contendo as anotações das aulas e respectivo código font
 Acesse a versão do angular desejada clicando sobre angula_vX, acesse [/aulas](angular_v2/aulas/README.md) e abra o [README](angular_v2/aulas/README.md). 
 Será apresentado o Índice das Aulas e resumo do conteúdo, permitindo navegar para a aula desejada /aula_YY/README.md...
 
+Além do conteúdo apresentado para cada aula, realizei anotações do estudo de forma complementar, para reforçar o entendimento, contemplando também a história e informações a cerca da utilização, detalhes da documentação e boas práticas.
+
 ## O que é Angular
 
 É um framework de desenvolvimento front-end de código aberto criado e mantido pelo Google. Ele serve para construir aplicações web modernas, focando em Single Page Applications (SPAs), onde a página não precisa ser recarregada inteira a cada clique do usuário.

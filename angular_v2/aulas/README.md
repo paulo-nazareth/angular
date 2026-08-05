@@ -2,7 +2,7 @@
 
 ### Lista das aulas Curso Angular
 
-Aulas publicadas/programadas
+Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre a seta para expandir todos os items.
 
 <details><summary><b>Introdução</b></summary>
 
@@ -10,7 +10,7 @@ Aulas publicadas/programadas
 * [02 - Ambiente de desenvolvimento](02_ambiente-desenvolvimento/README.md)
 * [03 - Primeira app (Hello World)](03_criando-primeiro-projeto/README.md)
 * [04 - Introdução ao Typescript para Angular](04_typescript-para-angular/README.md)
-* 05 - Módulos (ngModule)
+* [05 - Módulos (ngModule)](05_modulos-ngModule/README.md)
 * 06 - Templates
 * 07 - Serviços (Services) e Injeção de dependência (DI)
 * 08 - Dica de produtividade: code snippets
@@ -193,3 +193,8 @@ https://www.youtube.com/playlist?list=PLGxZ4Rq3BOBoSRcKWEdQACbUCNWLczg2G
 - HTML
 - CSS
 - JavaScript
+
+### Plugins Sugeridos
+
+- Auto Import
+    - Importação e Organização de Dependências
