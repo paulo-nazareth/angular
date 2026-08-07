@@ -11,7 +11,7 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [03 - Primeira app (Hello World)](03_criando-primeiro-projeto/README.md)
 * [04 - Introdução ao Typescript para Angular](04_typescript-para-angular/README.md)
 * [05 - Módulos (ngModule)](05_modulos-ngModule/README.md)
-* 06 - Templates
+* [06 - Templates](06_templates/README.md)
 * 07 - Serviços (Services) e Injeção de dependência (DI)
 * 08 - Dica de produtividade: code snippets
 
