@@ -12,7 +12,7 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [04 - Introdução ao Typescript para Angular](04_typescript-para-angular/README.md)
 * [05 - Módulos (ngModule)](05_modulos-ngModule/README.md)
 * [06 - Templates](06_templates/README.md)
-* 07 - Serviços (Services) e Injeção de dependência (DI)
+* [07 - Serviços (Services) e Injeção de dependência (DI)](07_servicos-injecao-dependencia/README.md)
 * 08 - Dica de produtividade: code snippets
 
 </details>
