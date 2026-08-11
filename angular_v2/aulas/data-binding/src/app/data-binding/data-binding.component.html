@@ -13,6 +13,8 @@
     <img bind-src="urlImagem" alt="Imagem">
   </article>
   <br>
+</section>
+<section class="class-style-binding">
   <article>
     <h3>Class e Style Binding</h3>
     <div>
@@ -38,7 +40,8 @@
       </div>
     </div>
   </article>
-  <br><br>
+</section> 
+<section class="event-binding"> 
   <article>
     <h3>Event Binding</h3>
     <div>
@@ -69,6 +72,23 @@
           Passe o mouse sobre mim!
         </span>
       </div>
+    </div>
+  </article>
+</section>
+<section class="two-way-data-binding">
+  <article>
+    <h3>Two-way Data Binding</h3>
+    <div>
+      <input type="text" [value]="nome" (input)="nome = $event.target.value">
+      <input type="text" [ngModel]="nome" (ngModelChange)="nome = $event">
+      <input type="text" [(ngModel)]="nome">
+      <input type="text" bindon-ngModel="nome">
+      <p>Você digitou: {{ nome }}</p>
+    </div>
+    <div class="two-way-data-binding-objetos">
+      <p>Meu nome é {{ pessoa.nome }} e tenho {{ pessoa.idade }} anos de idade.</p>
+      <input type="text" [(ngModel)]="pessoa.nome">
+      <input type="text" [(ngModel)]="pessoa.idade">
     </div>
   </article>
 </section>

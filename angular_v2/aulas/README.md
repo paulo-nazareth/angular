@@ -20,9 +20,9 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 <details><summary><b>Data binding e eventos</b></summary>
 
 * [09 - Property binding + Interpolation](09_property-binding-interpolation/README.md)
-* [10 - Class e Style binding](10_style-binding-css/README.md)
+* [10 - Class e Style binding](10_class-style-binding-css/README.md)
 * [11 - Event binding](11_event-binding/README.md)
-* 12 - Two-way data binding
+* [12 - Two-way data binding](12_two-way-data-binding/README.md)
 * 13 - Input properties
 * 14 - Output properties
 * 15 - Ciclo de vida (life-cycle) do Componente

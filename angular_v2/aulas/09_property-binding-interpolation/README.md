@@ -86,7 +86,7 @@ ng g c data-binding
 #  update src\app\app.module.ts
 ```
 
-### Código Nativo
+### Código Canônico (Nativo)
 
 O Angula omitir a necessidade de declarar o `bind-src` através do `[src]`, para facilitar a leitura e desenvolvimento do código.
 
@@ -94,6 +94,6 @@ O Angula omitir a necessidade de declarar o `bind-src` através do `[src]`, para
 <!--- Código Resumido -->
 <img [src]="urlImagem" alt="Imagem">
 
-<!--- Código Nativo -->
+<!--- Código Canônico (Nativo) -->
 <img bind-src="urlImagem" alt="Imagem">
 ```

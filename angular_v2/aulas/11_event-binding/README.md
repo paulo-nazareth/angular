@@ -25,7 +25,7 @@ export class ContadorComponent {
 <button (click)="incrementar()">Somar +1</button>
 ```
 
-### Código Nativo
+### Código Canônico (Nativo)
 
 O Angula omitir a necessidade de declarar o `on-click` através do `(click)`, para facilitar a leitura e desenvolvimento do código.
 
@@ -36,7 +36,7 @@ O Angula omitir a necessidade de declarar o `on-click` através do `(click)`, pa
   Clique Aqui!
 </button>
 
-<!--- Código Nativo -->
+<!--- Código Canônico (Nativo) -->
 <button class="btn btn-info"
   on-click="clicado()">
   Clique Aqui!
