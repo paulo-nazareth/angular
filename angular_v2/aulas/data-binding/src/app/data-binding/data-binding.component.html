@@ -38,4 +38,37 @@
       </div>
     </div>
   </article>
+  <br><br>
+  <article>
+    <h3>Event Binding</h3>
+    <div>
+      <div class="exemplo01">
+        <button class="btn btn-primary"
+          (click)="clicado()">
+          Clique Aqui!
+        </button>
+        <button class="btn btn-info"
+          on-click="clicado()"> <!--- O Angula omitir a necessidade de declarar o on-click através do (click), para facilitar a leitura e desenvolvimento do código -->
+          Clique Aqui!
+        </button>
+      </div>
+      <br>
+      <div class="exemplo02">
+        <input type="text" 
+          (keyup)="onKeyUp($event)"
+          (keyup.enter)="salvarValor($event.target.value)"
+          (blur)="salvarValor(campoInput.value)"
+          #campoInput/> <!--- Permite omitir a necessidade e substituir a declação do $event.target-->
+        <p>Valor Atual: {{ textEvent }}</p>
+        <p>Valor Salvo: {{ inputSalvo }}</p>
+      </div>
+      <div class="exemplo03">
+        <span (mouseover)="onMouseOverOut()"
+              (mouseout)="onMouseOverOut()"
+              [class.highlight]="isMouseOver">
+          Passe o mouse sobre mim!
+        </span>
+      </div>
+    </div>
+  </article>
 </section>
