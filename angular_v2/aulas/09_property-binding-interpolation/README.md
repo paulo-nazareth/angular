@@ -29,6 +29,10 @@ export class PerfilComponent {
 <p>Ano de nascimento: {{ 2026 - idade }}</p> <!-- Aceita expressões simples -->
 ```
 
+#### Style Guide Angular
+
+Como boa prática na decaração para facilitar a leitura recomenda-se colocar um espaço entre o nome do atributo e os chaves da interpolação ``{{ atributo }}``.
+
 ### 2. Property Binding [propriedade]="valor"
 
 Associa uma propriedade de um elemento HTML (como `src`, `disabled`, `href`, `value`) a uma variável do TypeScript.
