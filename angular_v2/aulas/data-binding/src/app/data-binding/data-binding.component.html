@@ -94,7 +94,15 @@
 </section>
 <section class="input-properties">
   <article class="input-properties">
-      <h2>Input/Output Properties</h2>
+      <h2>Input Properties</h2>
       <app-cursos [nome]="nomeCurso"></app-cursos>
+  </article>  
+</section>
+<section class="output-properties">
+  <article class="output-properties">
+      <h2>Output Properties</h2>
+      <!-- Exemplo de Declaração HardCode (Não precisa dos '[]')-->
+      <!-- <contador valor="10"></contador>-->
+      <contador [valor]="valorInicial" (mudouValor)="onMudouValor($event)"></contador>
   </article>  
 </section>
