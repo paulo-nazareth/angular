@@ -53,6 +53,22 @@ export class BotaoComponent {
 <button [disabled]="isDesabilitado">Enviar</button>
 ```
 
+#### Exemplos de declarações Property Binding
+
+```html
+  <img src="{{ urlImagem }}" alt="Imagem">
+
+  <!-- Declaração Resumida da Declaração Nativa -->
+  <img [src]="urlImagem" alt="Imagem">
+
+  <!-- Declaração Nativa -->
+  <img bind-src="urlImagem" alt="Imagem">
+```
+
+### Resumo Property Binding
+
+![property-binding](assets/property-binding.png)
+
 ## Comandos Executados Para Criação de Projeto de Exemplo
 
 ```bash
@@ -70,4 +86,3 @@ ng g c data-binding
 #  update src\app\app.module.ts
 ```
 
-![property-binding](assets/property-binding.png)
