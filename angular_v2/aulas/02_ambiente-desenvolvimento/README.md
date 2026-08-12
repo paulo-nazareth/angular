@@ -137,3 +137,10 @@ O VS Code é a escolha mais popular da comunidade por ser rápido e altamente ex
 
 https://code.visualstudio.com/
 
+### Variaveis de Ambiente Windows
+
+- Path
+
+```text
+C:\Program Files\nodejs\
+```

@@ -23,9 +23,9 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [10 - Class e Style binding](10_class-style-binding-css/README.md)
 * [11 - Event binding](11_event-binding/README.md)
 * [12 - Two-way data binding](12_two-way-data-binding/README.md)
-* 13 - Input properties
-* 14 - Output properties
-* 15 - Ciclo de vida (life-cycle) do Componente
+* [13 - Input properties](13_input-properties/README.md)
+* [14 - Output properties](14_eventos-output-properties/README.md)
+* [15 - Ciclo de vida (life-cycle) do Componente](15_ciclo-de-vida-componente/README.md)
 * 16 - Acesso à variáveis locais do Template com ViewChild
 * Extra: Atualizações do RC 5 e ngModule
 
