@@ -26,14 +26,14 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [13 - Input properties](13_input-properties/README.md)
 * [14 - Output properties](14_eventos-output-properties/README.md)
 * [15 - Ciclo de vida (life-cycle) do Componente](15_ciclo-de-vida-componente/README.md)
-* 16 - Acesso à variáveis locais do Template com ViewChild
+* [16 - Acesso à variáveis locais do Template com ViewChild](16_dom-template-viewchild/README.md)
 * Extra: Atualizações do RC 5 e ngModule
 
 </details>
 
 <details><summary><b>Angular CLI: Introdução</b></summary>
 
-* 17 - Angular CLI: Instalação e criação de projetos: ng new e ng serve
+* [17 - Angular CLI: Instalação e criação de projetos: ng new e ng serve](17_angular-cli/README.md)
 * 18 - Angular CLI: Criando components, services: ng generate
 * Extra: Angular CLI: atualizando para versão RC5 (webpack)
 * 19 - Angular CLI: Usando pré-processadores (Sass, Less, Stylus)
