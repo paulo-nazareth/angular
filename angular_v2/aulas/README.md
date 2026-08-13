@@ -34,9 +34,9 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 <details><summary><b>Angular CLI: Introdução</b></summary>
 
 * [17 - Angular CLI: Instalação e criação de projetos: ng new e ng serve](17_angular-cli/README.md)
-* 18 - Angular CLI: Criando components, services: ng generate
+* [18 - Angular CLI: Criando components, services: ng generate](18_angular-cli-ng-generate/README.md)
 * Extra: Angular CLI: atualizando para versão RC5 (webpack)
-* 19 - Angular CLI: Usando pré-processadores (Sass, Less, Stylus)
+* [19 - Angular CLI: Usando pré-processadores (Sass, Less, Stylus)](19_pre-processadores-sass-less-stylus/README.md)
 * 20 - Angular CLI: ng lint, ng test, ng e2e
 * 21 - Angular CLI: Estrutura do projeto
 * 22 - Angular CLI: Fazendo build
