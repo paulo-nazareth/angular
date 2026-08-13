@@ -37,7 +37,7 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [18 - Angular CLI: Criando components, services: ng generate](18_angular-cli-ng-generate/README.md)
 * Extra: Angular CLI: atualizando para versão RC5 (webpack)
 * [19 - Angular CLI: Usando pré-processadores (Sass, Less, Stylus)](19_pre-processadores-sass-less-stylus/README.md)
-* 20 - Angular CLI: ng lint, ng test, ng e2e
+* [20 - Angular CLI: ng lint, ng test, ng e2e](20_angular-cli-ng-lint-test-e2e/README.md)
 * 21 - Angular CLI: Estrutura do projeto
 * 22 - Angular CLI: Fazendo build
 * 23 - Angular CLI: instalando bibliotecas (bootstrap, materialize, lodash, jquery, etc)
@@ -198,3 +198,7 @@ https://www.youtube.com/playlist?list=PLGxZ4Rq3BOBoSRcKWEdQACbUCNWLczg2G
 
 - Auto Import
     - Importação e Organização de Dependências
+
+### Link Documentação Style Guide
+
+https://v2.angular.io/docs/ts/latest/guide/architecture.html
