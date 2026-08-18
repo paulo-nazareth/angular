@@ -1,0 +1,43 @@
+<section>
+  <h1>Bootstrap</h1>
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">{{title}}</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+  </ul>
+  <div class="container mt-4">
+    <div class="alert alert-success" role="alert">
+      Bootstrap 4.6.0 configurado com sucesso no Angular v2!
+    </div>  
+    <button type="button" class="btn btn-primary">
+      Botão Bootstrap
+    </button>
+  </div>
+</section>
+<section>
+  <h1>Materialize</h1>
+  <ul materialize="collapsible" class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+    </li>
+  </ul>
+</section>
+<p *ngFor="let item of list">{{item}}</p>

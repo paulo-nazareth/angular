@@ -38,9 +38,9 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * Extra: Angular CLI: atualizando para versão RC5 (webpack)
 * [19 - Angular CLI: Usando pré-processadores (Sass, Less, Stylus)](19_pre-processadores-sass-less-stylus/README.md)
 * [20 - Angular CLI: ng lint, ng test, ng e2e](20_angular-cli-ng-lint-test-e2e/README.md)
-* 21 - Angular CLI: Estrutura do projeto
-* 22 - Angular CLI: Fazendo build
-* 23 - Angular CLI: instalando bibliotecas (bootstrap, materialize, lodash, jquery, etc)
+* [21 - Angular CLI: Estrutura do projeto](21_estrutura-projeto-angular/README.md)
+* [22 - Angular CLI: Fazendo build](22_gerando-build-dev-producao/README.md)
+* [23 - Angular CLI: instalando bibliotecas (bootstrap, materialize, lodash, jquery, etc)](23_instalando-bibliotecas/README.md)
 
 </details>
 
@@ -202,3 +202,5 @@ https://www.youtube.com/playlist?list=PLGxZ4Rq3BOBoSRcKWEdQACbUCNWLczg2G
 ### Link Documentação Style Guide
 
 https://v2.angular.io/docs/ts/latest/guide/architecture.html
+
+https://v2.angular.io/docs/ts/latest/quickstart.html
