@@ -69,6 +69,7 @@ npm install -g @angular/cli
 
 # Instalar a versão compatível do Angular CLI
 npm install -g @angular/cli@1.0.0
+npm install -g @angular/cli@1.0.6
 ```
 
 Nota Versão Anteriores: Necessário informar a versão `@` + `Versão Desejada`.

@@ -46,7 +46,7 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 
 <details><summary><b>Diretivas</b></summary>
 
-* 24 - Introdução e tipos de diretivas no Angular 2
+* [24 - Introdução e tipos de diretivas no Angular 2](24_introducao-diretivas/README.md)
 * 25 - ngIf
 * 26 - ngSwitch
 * 27 - ngFor
