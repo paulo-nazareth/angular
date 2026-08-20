@@ -1,3 +1,33 @@
-<p>
-  diretiva-ngif works!
-</p>
+<section>
+  <article class="exemplo-diretiva-ngif">
+    <h4>*ngIf</h4>
+
+    <!-- Atributo List -->
+    <div *ngIf="cursos.length > 0">
+      Lista de cursos:
+    </div>
+    <!-- Na versão atual não possui o else, sendo utilizado a negação da condição anterior -->
+    <div *ngIf="cursos.length == 0">
+      Não existem cursos para serem listados.
+    </div>
+
+    <!-- Atributo Boolean -->
+    <div *ngIf="mostrarCursos">
+      Lista de cursos:
+    </div>
+    <div *ngIf="!mostrarCursos">
+      Não existem cursos para serem listados.
+    </div>
+
+    <button (click)="onExibirCursos()" class="btn btn-primary">Mostrar ou Esconder Cursos</button>
+
+    <h5>Hidden como Alternativa</h5>
+    <h6>Para reduzir processamento ao alterar a DOM</h6>
+    <div [hidden]="!mostrarCursos">
+      Lista de cursos:
+    </div>
+    <div [hidden]="mostrarCursos">
+      Não existem cursos para serem listados.
+    </div>    
+  </article>
+</section>
