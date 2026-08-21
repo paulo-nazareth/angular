@@ -1,6 +1,6 @@
 # Angular V2
 
-## Aula 26 - Diretivas - ngSwitch, ngSwitchCase e ngSwitchDefault
+## Aula 26 - Diretiva - ngSwitch, ngSwitchCase e ngSwitchDefault
 
 A diretiva `ngSwitch` no Angular é uma diretiva estrutural usada para exibir um elemento HTML específico entre várias opções possíveis, funcionando exatamente como o comando `switch` / `case` em linguagens de programação.
 
@@ -13,7 +13,7 @@ Ela é composta por três partes integradas:
 ![condicional-switch-case](assets/condicional-switch-case.png)
 
 ```bash
-# Componente criado para esta aula
+# Componente criado para esta aula.
 ng g c diretiva-ngswitch
 ```
 
@@ -41,6 +41,7 @@ import { Component } from '@angular/core';
 export class ExemploSwitchComponent {
   abaSelecionada: string = 'home'; // 'home', 'perfil', 'configuracoes'
 
+  /* Não foi utilizado, optou-se por realizar a atribuição direta na tela. */
   definirAba(aba: string) {
     this.abaSelecionada = aba;
   }
