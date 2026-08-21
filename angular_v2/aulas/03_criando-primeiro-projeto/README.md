@@ -1,6 +1,6 @@
 # Angular V2
 
-## Aula 03 - Criando Nosso Primeiro Projeto e Primeiro Componente
+## Aula 03 - Hello, World - Criando Nosso Primeiro Projeto e Primeiro Componente
 
 ### Criando e Rodando o Projeto
 

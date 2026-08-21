@@ -1,6 +1,6 @@
 # Angular V2
 
-## Aula 15 - Ciclo de Vida do Componente
+## Aula 15 - Ciclo de vida (life-cycle) do Componente
 
 ### Ciclo de Vida
 

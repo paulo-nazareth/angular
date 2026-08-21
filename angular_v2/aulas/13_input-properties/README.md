@@ -1,6 +1,6 @@
 # Angular V2
 
-## Aula 13 - Input Properties
+## Aula 13 - Reusando Componente com Input Properties
 
 No Angular, Input e Output são os mecanismos fundamentais para a comunicação entre componentes em uma relação de Pai para Filho (Parent to Child) e Filho para Pai (Child to Parent).
 

@@ -1,6 +1,6 @@
 # Angular V2
 
-## Aula 06 - Templates
+## Aula 06 - Introdução aos Templates
 
 No Angular, o Template é a parte visual do componente, ou seja, é o código HTML que define o que o usuário vai ver na tela.
 
