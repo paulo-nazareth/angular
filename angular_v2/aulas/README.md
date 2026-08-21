@@ -49,8 +49,8 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [24 - Introdução e tipos de diretivas no Angular 2](24_introducao-diretivas/README.md)
 * [25 - Diretivas - ngIf](25_diretiva-ngif/README.md)
 * [26 - Diretivas - ngSwitch, ngSwitchCase e ngSwitchDefault](26_diretivas-ngSwitch-ngSwitchCase/README.md)
-* 27 - Diretivas - ngFor
-* 28 - sobre o asterisco
+* [27 - Diretivas - ngFor](27_diretiva-ngfor/README.md)
+* [28 - Diretivas - Sobre o * (Asterisco) e Template](28_diretiva-asteristico-e-template/README.md)
 * 29 - ngClass
 * 10 - ngStyle
 * 31 - operador elvis
