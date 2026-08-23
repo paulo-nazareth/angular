@@ -6,10 +6,10 @@
 
 Para realização do curso será utilizado as versões:
 
-- **Node**: v7.5.0 (Donwgrade para a versão v6.17.1)
-- TypeScript: 2.0.10
-- Angular CLI: 1.0.0 (Devido a erros, atualizado para versão 1.0.6)
-- VS Code: Versão Atual
+- **Node.js**: v7.5.0 (Downgrade para a versão v6.17.1)
+- **TypeScript**: 2.0.10 (ou 2.1.6)
+- **Angular CLI**: 1.0.0 (ou a versão de transição angular-cli@1.0.0-beta.28.3)
+- **VS Code**: Versão Atual
 
 ## Node.Js
 
@@ -178,6 +178,28 @@ O VS Code é a escolha mais popular da comunidade por ser rápido e altamente ex
 - **Gratuito e Aberto**: Totalmente livre para uso pessoal e comercial.
 - **Personalizável**: Você monta seu ambiente instalando pacotes de formatação, temas e atalhos.
 
+#### Definir o Git Bash como o Terminal (Padrão)
+
+Para definir o Git Bash como o terminal padrão no VS Code alterando a configuração `terminal.integrated.defaultProfile.windows` nas configurações do editor.
+
+Como mudar pelo menu do `VS Code`
+
+- Abra o **VS Code**.
+- Pressione as teclas `Ctrl + ,` para abrir as Configurações.
+- Digite `terminal default windows` na barra de pesquisa superior.
+- Procure por **Terminal > Integrated > Default Profile: Windows**.
+- Escolha **Git Bash** na lista suspensa.
+
+Como mudar pelo arquivo `settings.json`
+
+- Pressione `Ctrl` + `Shift` + `P` para abrir a paleta de comandos.
+- Digite **Abrir Configurações (JSON)** e selecione essa opção.
+- Adicione ou altere a seguinte linha no seu código:
+
+```json
+"terminal.integrated.defaultProfile.windows": "Git Bash"
+```
+
 ### Link para Download
 
 https://code.visualstudio.com/
@@ -188,4 +210,30 @@ https://code.visualstudio.com/
 
 ```text
 C:\Program Files\nodejs\
+```
+
+## Solução Problemas de Configuração
+
+### Desabilitar concorrência do NPM (maxsockets)
+
+Esse erro (ENOTDIR / ENOENT apontando para pastas dentro do .staging do node_modules) acontece com frequência no NPM 3 ou 4 (que vêm junto com o Node 6 e Node 7) ao rodar no Windows.
+
+O NPM antigo tenta baixar dezenas de pacotes `@types` simultaneamente, o que trava o sistema de arquivos do Windows no meio do processo. Reduza o limite de conexões simultâneas para 1 executando:
+
+```Bash
+npm config set maxsockets 1
+```
+
+### Restaurar configuração padrão do NPM (Após a instalação)
+
+Quando a instalação terminar com sucesso e a pasta node_modules estiver criada, você pode voltar o limite de conexões do NPM ao normal com:
+
+```Bash
+npm config delete maxsockets
+```
+
+Em seguida, basta rodar o servidor de testes:
+
+```Bash
+ng serve
 ```

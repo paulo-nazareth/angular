@@ -29,4 +29,17 @@
       Não existem cursos para serem listados.
     </div>    
   </article>
+  <article class="exemplo-template">
+
+    <h5>Removendo o * e utilizando o template</h5>
+    <p>Sintaxe correspondente ao segundo exemplo</p>
+    <!-- Atributo Boolean -->
+    <template [ngIf]="mostrarCursos">
+      Lista de cursos 1:
+    </template>
+
+    <div template="ngIf mostrarCursos">
+      Lista de cursos 2:
+    </div>
+  </article>
 </section>

@@ -17,3 +17,12 @@
   <p *ngSwitchCase="'about'">Aba About Ativa</p>
   <p *ngSwitchDefault>Aba Home Ativa</p>
 </div>
+<article class="exemplo-template">
+  <h5>Removendo o * e utilizando o template</h5>
+  <div class="container" [ngSwitch]="abaSelecionada">
+    <template [ngSwitchCase]="'features'"><p>Aba Features Ativa</p></template>
+    <template [ngSwitchCase]="'pricing'"><p>Aba Pricing Ativa</p></template>
+    <template [ngSwitchCase]="'about'"><p>Aba About Ativa</p></template>
+    <template [ngSwitchCase]="'home'" ngSwitchDefault><p>Aba Home Ativa</p></template>
+  </div>
+</article>
