@@ -51,8 +51,8 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [26 - Diretivas - ngSwitch, ngSwitchCase e ngSwitchDefault](26_diretivas-ngSwitch-ngSwitchCase/README.md)
 * [27 - Diretivas - ngFor](27_diretiva-ngfor/README.md)
 * [28 - Diretivas - Sobre o * (Asterisco) e Template](28_diretiva-asteristico-e-template/README.md)
-* 29 - ngClass
-* 10 - ngStyle
+* [29 - Diretivas - ngClass](29_diretiva-ngclass/README.md)
+* 30 - ngStyle
 * 31 - operador elvis
 * 32 - ng-content
 * 33 - Criando uma diretiva de atributo

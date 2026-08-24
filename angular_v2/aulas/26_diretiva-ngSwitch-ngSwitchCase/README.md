@@ -29,7 +29,7 @@ Saída Console após a execução do comando para criação do componente.
 
 ### 1. Exemplo Prático
 
-Componente (.ts):
+Componente (`.ts`):
 
 ```TypeScript
 import { Component } from '@angular/core';
@@ -48,7 +48,7 @@ export class ExemploSwitchComponent {
 }
 ```
 
-Template (.html):
+Template (`.html`):
 
 ```HTML
 <!-- Botoes de Navegação -->
