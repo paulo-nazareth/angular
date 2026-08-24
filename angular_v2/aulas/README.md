@@ -52,7 +52,7 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [27 - Diretivas - ngFor](27_diretiva-ngfor/README.md)
 * [28 - Diretivas - Sobre o * (Asterisco) e Template](28_diretiva-asteristico-e-template/README.md)
 * [29 - Diretivas - ngClass](29_diretiva-ngclass/README.md)
-* 30 - ngStyle
+* [30 - Diretivas - ngStyle](30_diretiva-ngstyle/README.md)
 * 31 - operador elvis
 * 32 - ng-content
 * 33 - Criando uma diretiva de atributo
