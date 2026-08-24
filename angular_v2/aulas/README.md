@@ -53,7 +53,7 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [28 - Diretivas - Sobre o * (Asterisco) e Template](28_diretiva-asteristico-e-template/README.md)
 * [29 - Diretivas - ngClass](29_diretiva-ngclass/README.md)
 * [30 - Diretivas - ngStyle](30_diretiva-ngstyle/README.md)
-* 31 - operador elvis
+* [31 - Operador Elvis ("?")](31_operador-elvis/README.md)
 * 32 - ng-content
 * 33 - Criando uma diretiva de atributo
 * 34 - HostListener e HostBinding

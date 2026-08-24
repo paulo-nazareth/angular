@@ -4,7 +4,7 @@
 
 A diretiva `ngStyle` no Angular 2 serve para aplicar estilos CSS inline dinamicamente a um elemento HTML, alterando propriedades como cor, tamanho de fonte, largura e exibição com base em expressões do seu componente TypeScript.
 
-Para exemplificação da diretiva foi criado o componente `diretiva-ngclass`.
+Para exemplificação da diretiva foi criado o componente `diretiva-ngstyle`.
 
 ```bash
 ng g c diretiva-ngstyle
