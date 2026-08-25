@@ -18,3 +18,19 @@
   Texto com highlight com cores customizadas.
 </p>
 
+<h5>Diretiva Estrutura Customizada *ngElse</h5>
+<!-- Diretiva Customizada *ngElse -->
+<div *ngIf="mostrarCursos">
+  Lista de cursos:
+</div>
+<div *ngElse="mostrarCursos">
+  Não existem cursos para serem listados.
+</div>
+<button (click)="onMostrarCursos()" class="btn btn-primary">Mostrar ou Esconder Cursos</button>
+<br>
+<!-- Desestruturando e usando a diretiva na sua forma original -->
+<template [ngElse]="mostrarCursos">
+  <div>
+    Naõ existe cursos para serem listados.
+  </div>
+</template>
