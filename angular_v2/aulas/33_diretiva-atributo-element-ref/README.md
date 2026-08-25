@@ -4,7 +4,7 @@
 
 Diretivas de atributo alteram a aparência ou o comportamento de um elemento HTML existente. Para manipular o elemento de forma segura em Angular, `ElementRef` e `Renderer2` (evoluído do antigo `Renderer`) trabalham juntos.
 
-Para exemplificação foi criado o componente `fundo-amarelo`.
+Para exemplificação foi criado a diretiva `fundo-amarelo`.
 
 ```bash
 # Criação da Diretiva
