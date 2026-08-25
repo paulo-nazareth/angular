@@ -55,7 +55,7 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [30 - Diretivas - ngStyle](30_diretiva-ngstyle/README.md)
 * [31 - Operador Elvis ("?")](31_operador-elvis/README.md)
 * [32 - ng-content](32_ng-content/README.md)
-* 33 - Criando uma diretiva de atributo
+* [33 - Criando uma diretiva de atributo ElementRef e Renderer](33_diretiva-atributo-element-ref/README.md)
 * 34 - HostListener e HostBinding
 * 35 - Property Binding de Diretivas
 * 36 - Criando uma diretiva de estrutura (ngElse)
