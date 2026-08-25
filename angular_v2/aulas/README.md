@@ -57,7 +57,7 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [32 - ng-content](32_ng-content/README.md)
 * [33 - Criando uma diretiva de atributo ElementRef e Renderer](33_diretiva-atributo-element-ref/README.md)
 * [34 - Criando uma diretiva HostListener e HostBinding](34_diretiva-hostlistener-hostbinding/README.md)
-* 35 - Property Binding de Diretivas
+* [35 - Input e Property Binding de Diretivas](35_diretiva-input-property-binding/README.md)
 * 36 - Criando uma diretiva de estrutura (ngElse)
 
 </details>

@@ -9,4 +9,12 @@
 <p highlightMouse>
   Texto com highlight ao passar o mouse.
 </p>
+<!--Otimizando, ao utilizar o nome da diretiva como nome do input
+  <p highlight [defaultColor]="'grey'" [highlightColor]="'red'">
+    Texto com highlight com cores customizadas.
+  </p>
+-->
+<p [highlight]="'red'" [defaultColor]="'grey'">
+  Texto com highlight com cores customizadas.
+</p>
 
