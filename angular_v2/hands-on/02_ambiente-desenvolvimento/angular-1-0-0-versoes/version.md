@@ -119,7 +119,7 @@ npm install --save-dev --save-exact angular-cli@1.0.0-beta.28.3 typescript@2.0.1
 ## Apresentou Erro (Type expected.)
 
 ```bash
-ERROR in C:/_develop/app/angular/angular_v2/aulas/servicos/node_modules/@types/selenium-webdriver/index.d.ts (2614,5): Type expected.
+C:/_develop/app/angular/angular_v2/hands-on/servicos/node_modules/@types/selenium-webdriver/index.d.ts
 ```
 
 ### Opções de Correção
@@ -165,7 +165,7 @@ A forma mais eficiente de garantir que tipos desatualizados de terceiros não qu
 
 ### Solução 3: Remover a pasta de testes temporariamente
 
-Se você está apenas estudando os conceitos de serviços do Angular 2 nesta pasta (`/aulas/servicos/`), os testes automatizados não são necessários para a aplicação funcionar.
+Se você está apenas estudando os conceitos de serviços do Angular 2 nesta pasta (`/hands-on/servicos/`), os testes automatizados não são necessários para a aplicação funcionar.
 
 Se as soluções acima falharem por conta de outras dependências de teste (como karma ou protractor), você pode simplesmente **deletar a pasta** `node_modules/@types/selenium-webdriver` ou remover as linhas de teste do seu `package.json` e rodar o `npm install` novamente.
 

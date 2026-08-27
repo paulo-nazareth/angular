@@ -29,6 +29,8 @@ Tratamento para evitar a repetição, quando o trecho de código é comum a mais
 
 ![service-dont-repet-implement](assets/service-dont-repet-implement.png)
 
+Além de permitir a criação de classes utilitárias.
+
 ![service-util](assets/service-util.png)
 
 ### Criando um Serviço Básico
