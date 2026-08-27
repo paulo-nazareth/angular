@@ -4,7 +4,8 @@
 
 Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre a seta para expandir todos os items.
 
-<details><summary><b>Introdução</b></summary>
+<details>
+    <summary><b>Introdução</b></summary>
 
 * [01 - Introdução + Arquitetura](01_introducao_arquitetura/README.md)
 * [02 - Ambiente de desenvolvimento (Node.Js, TypeScript, Angular CLI)](02_ambiente-desenvolvimento/README.md)
@@ -17,7 +18,8 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 
 </details>
 
-<details><summary><b>Data binding e eventos</b></summary>
+<details>
+    <summary><b>Data binding e eventos</b></summary>
 
 * [09 - Property binding + Interpolation](09_property-binding-interpolation/README.md)
 * [10 - Class e Style binding](10_class-style-binding-css/README.md)
@@ -31,7 +33,8 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 
 </details>
 
-<details><summary><b>Angular CLI: Introdução</b></summary>
+<details>
+    <summary><b>Angular CLI: Introdução</b></summary>
 
 * [17 - Angular CLI: Instalação e criação de projetos: ng new e ng serve](17_angular-cli/README.md)
 * [18 - Angular CLI: Criando components, services: ng generate](18_angular-cli-ng-generate/README.md)
@@ -44,7 +47,8 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 
 </details>
 
-<details><summary><b>Diretivas</b></summary>
+<details>
+    <summary><b>Diretivas</b></summary>
 
 * [24 - Introdução e tipos de diretivas no Angular 2](24_introducao-diretivas/README.md)
 * [25 - Diretivas - ngIf](25_diretiva-ngif/README.md)
@@ -58,13 +62,14 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [33 - Criando uma diretiva de atributo ElementRef e Renderer](33_diretiva-atributo-element-ref/README.md)
 * [34 - Criando uma diretiva HostListener e HostBinding](34_diretiva-hostlistener-hostbinding/README.md)
 * [35 - Input e Property Binding de Diretivas](35_diretiva-input-property-binding/README.md)
-* 36 - Criando uma diretiva de estrutura (ngElse)
+* [36 - Criando uma diretiva de estrutura (ngElse)](36_criando-diretiva-ngelse/README.md)
 
 </details>
 
-<details><summary><b>Serviço (Service) e Injeção de Dependência (DI)</b></summary>
+<details>
+    <summary><b>Serviço (Service) e Injeção de Dependência (DI)</b></summary>
 
-* 37 - Introdução a Serviços
+* [37 - Introdução a Serviços (Services)](37_introducao-services/README.md)
 * 38 - Criando um serviço (Service)
 * 39 - Injeção de Dependência (DI) + como usar um serviço em um componente
 * 40 - Escopo de instâncias de serviços e módulos
@@ -73,7 +78,8 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 
 </details>
 
-<details><summary><b>Pipes</b></summary>
+<details>
+    <summary><b>Pipes</b></summary>
 
 * 43: Pipes (usando pipes, parâmetros e pipes aninhados)
 * 44: Criando um Pipe
@@ -84,7 +90,8 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 
 </details>
 
-<details><summary><b>Rotas</b></summary>
+<details>
+    <summary><b>Rotas</b></summary>
 
 * 49: Rotas: Introdução
 * 50: Rotas: Configurando rotas simples
@@ -112,7 +119,9 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 
 </details>
 
-<details><summary><b>Formulários (Templates)</b></summary>
+<details>
+    <summary><b>Formulários (Templates)</b></summary>
+
 * 72: Formulários (template vs data / reativo) Introdução
 * 73: Formulários - Criando o projeto inicial com Bootstrap 3
 * 74: Forms (template driven) Controles ngForm, ngSubmit e ngModel
@@ -132,7 +141,8 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 
 </details>
 
-<details><summary><b>Formulários (Reativos)</b></summary>
+<details>
+    <summary><b>Formulários (Reativos)</b></summary>
 
 * 88: Formulários reativos (data driven) Introdução
 * 89: Formulários reativos: Configuração (Módulo e Componente)
@@ -166,7 +176,8 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 
 </details>
 
-<details><summary><b>Integração com server</b></summary>
+<details>
+    <summary><b>Integração com server</b></summary>
 
 * 117: Http / HttpClient: Introdução
 * 118: Instalando Bootstrap 4
