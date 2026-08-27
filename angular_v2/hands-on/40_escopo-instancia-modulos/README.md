@@ -1,6 +1,6 @@
 # Angular V2
 
-## Aula 40 - Escopo de instâncias de serviços e módulos (singleton e varias instâncias)
+## Aula 40 - Escopo de Instâncias de Serviços e Módulos (Singleton e Varias Instâncias)
 
 No Angular, o escopo e a quantidade de instâncias de um serviço (Singleton vs. Múltiplas Instâncias) dependem diretamente de onde e como o serviço é provido na árvore de injetores (Injector Tree).
 
