@@ -11,7 +11,7 @@ import { CursosComponent } from './cursos.component';
   imports: [
     CommonModule //Módulo de funcionalidade sem ser o módulo raiz passa a utilizar o CommonModule no lugar do BrowserModule
   ],
-  providers: [ CursosService ],
+  // providers: [ CursosService ],
   exports: [ CursosComponent ]
 })
 export class CursosModule { }

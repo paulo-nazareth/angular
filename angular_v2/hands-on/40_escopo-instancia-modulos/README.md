@@ -61,6 +61,7 @@ ng g c criar-curso
 ```
 
 Nota: Após a declaração do serviço ser realizado em dois componentes, o construtor do serviço é chamado uma unica vez, pos esta declarado nos providers do `app.module.ts`.
+Mas se declaramos no `providers` de cada módulo individualmente o serviço será acionado o número de vezes que for instanciado.
 
 ### Curiosidade 
 
