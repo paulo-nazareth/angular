@@ -16,6 +16,16 @@ export class CursosComponent implements OnInit {
 
   ngOnInit() {
     this.cursos = this.cursosService.getCursos();
+    
+    /*Substituído para compartilhar entre os compontes através do static*/
+    // this.cursosService.emitirCursoCriado.subscribe(
+    CursosService.criouNovoCurso.subscribe(
+      // (curso: any) => console.log(curso)
+      (curso: any) => this.cursos.push(curso)
+      // function (curso){
+      //   console.log(curso);
+      // }
+    );
   }
 
   /* Declaração do Serviço Manual (sem injeção de dependência) */

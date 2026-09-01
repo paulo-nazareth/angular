@@ -71,9 +71,9 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 
 * [37 - Introdução a Serviços (Services)](37_introducao-services/README.md)
 * [38 - Criando um Serviço (Service)](38_criando-servico/README.md)
-* [39 - Injeção de Dependência (DI) + como usar um serviço em um componente](39_injecao-dependencia-servico/README.md)
-* 40 - Escopo de instâncias de serviços e módulos (singleton e varias instâncias)
-* 41 - Comunicação entre componentes usando serviços
+* [39 - Injeção de Dependência (DI) + Como Usar um Serviço em um Componente](39_injecao-dependencia-servico/README.md)
+* [40 - Escopo de Instâncias de Serviços e Módulos (Singleton e Varias Instâncias)](40_escopo-instancia-modulos/README.md)
+* [41 - Comunicação Entre Componentes Usando Serviços (broadcast e eventos)]
 * 42 - Injetando um serviço em outro serviço
 
 </details>
