@@ -82,7 +82,7 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
     <summary><b>Pipes</b></summary>
 
 * [43 - Pipes (usando pipes, parâmetros e pipes aninhados)](43_pipes-aninhados-parametros/README.md)
-* 44: Criando um Pipe
+* [44: Criando um Pipe](44_criando-pipe/README.md)
 * 45: Aplicando Locale (internacionalização) nos Pipes
 * 46: Pipes: Criando um Pipe "Puro
 * 47: Pipes: Criando um Pipe "Impuro"
