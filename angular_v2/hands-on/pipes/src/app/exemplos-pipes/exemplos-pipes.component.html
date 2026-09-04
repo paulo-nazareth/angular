@@ -16,8 +16,26 @@
 <button (click)="addCurso(novoValor.value)">Add Curso</button>
 <br>
 
+<h5>Pipe Puro</h5>
+
 <ul>
     <li *ngFor="let liv of livros | filtroArray:filtro">
+        {{ liv }}
+    </li>
+</ul>
+
+<h5>Pipe Impuro</h5>
+
+<ul>
+    <li *ngFor="let liv of livros | filtroArrayImpuro:filtro">
+        {{ liv }}
+    </li>
+</ul>
+
+<h5>Forma Correta de Realizar Filtros em Projetos Reais</h5>
+
+<ul>
+    <li *ngFor="let liv of obterCursos()">
         {{ liv }}
     </li>
 </ul>
