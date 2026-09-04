@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { ExemplosPipesComponent } from './exemplos-pipes/exemplos-pipes.component';
 import { CamelCasePipe } from './camel-case.pipe';
 import { SettingsService } from './settings.service';
+import { FiltroArrayPipe } from './filtro-array.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     ExemplosPipesComponent,
-    CamelCasePipe
+    CamelCasePipe,
+    FiltroArrayPipe
   ],
   imports: [
     BrowserModule,
@@ -20,19 +22,11 @@ import { SettingsService } from './settings.service';
     HttpModule
   ],
   providers: [
-    /*
-    //Pode ser configurado diretamente no módulo, mas também pode ser configurada no serviço exemplo abaixo
     {
       provide: LOCALE_ID,
       useValue: 'pt-BR'//, //Padrão en-US
       //useClass: '',
       //useFactory:
-    }*/
-    SettingsService,
-    {
-      provide: LOCALE_ID,
-      deps: [SettingsService],
-      useFactory: (settingsService: any) => settingsService.getLocale()
     }
   ],
   bootstrap: [AppComponent]

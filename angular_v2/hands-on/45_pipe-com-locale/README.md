@@ -78,8 +78,36 @@ registerLocaleData(localeEs);
 <p>{{ dataHoje | date:'fullDate':'':'es' }}</p>
 ```
 
+### Implementação no Módulo
+
+Pode ser configurado diretamente no módulo, mas também pode ser configurada no serviço exemplo abaixo:
+
+```TypeScript
+  providers: [
+    {
+      provide: LOCALE_ID,
+      useValue: 'pt-BR'//, //Padrão en-US
+      //useClass: '',
+      //useFactory:
+    }
+  ],
+```
+
 Para exemplificar o uso do Locale além da configuração no `module.ts` (comentado), também foi criado um novo service chamado `settings`.
 
 ```bash
 ng g s settings
 ```
+
+```TypeScript
+  providers: [
+    SettingsService,
+    {
+      provide: LOCALE_ID,
+      deps: [SettingsService],
+      useFactory: (settingsService: any) => settingsService.getLocale()
+    }
+  ],
+```
+
+
