@@ -93,7 +93,7 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 <details>
     <summary><b>Rotas</b></summary>
 
-* [49 - Rotas: Introdução](48_pipe-async/README.md)
+* [49 - Rotas: Introdução](49_rotas-introducao/README.md)
 * 50 - Rotas: Configurando rotas simples
 * 51 - Rotas: RouterLink: definindo rotas no template
 * 52 - Rotas: Aplicando CSS em rotas ativas-k
