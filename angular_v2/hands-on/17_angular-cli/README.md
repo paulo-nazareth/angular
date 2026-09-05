@@ -1,6 +1,6 @@
 # Angular V2
 
-## Aula 17 - Angular CLI - Instalação e criação de projetos, ng new e ng serve
+## Aula 17 - Angular CLI - Instalação e Criação de Projetos, ng new e ng serve
 
 O Angular CLI (Command Line Interface) é a ferramenta de linha de comando oficial fornecida pela equipe do Angular. Ele é essencial para criar, desenvolver, testar e fazer a build de aplicações Angular de forma padronizada e otimizada.
 

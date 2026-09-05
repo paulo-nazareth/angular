@@ -1,6 +1,6 @@
 # Angular V2
 
-## Aula 18 - Angular CLI - Criando components, services (ng generate)
+## Aula 18 - Angular CLI - Criando Components, Services (ng generate)
 
 O comando `ng generate` (ou a versão simplificada `ng g`) é um dos recursos mais poderosos do Angular CLI. Ele gera arquivos automaticamente seguindo os padrões oficiais de arquitetura, convenções de nomenclatura e boas práticas, criando também os arquivos de testes unitários (.spec.ts) e registrando o elemento onde for necessário.
 

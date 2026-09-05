@@ -1,6 +1,6 @@
 # Angular V2
 
-## Aula 02 - Ambiente de desenvolvimento (Node.Js, TypeScript, Angular CLI)
+## Aula 02 - Ambiente de Desenvolvimento (Node.Js, TypeScript, Angular CLI)
 
 ### Pré-requisitos
 

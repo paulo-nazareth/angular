@@ -1,6 +1,6 @@
 # Angular V2
 
-## Aula 21 - Angular CLI - Estrutura do projeto
+## Aula 21 - Angular CLI - Estrutura do Projeto
 
 ### Conceitos-chave:
 

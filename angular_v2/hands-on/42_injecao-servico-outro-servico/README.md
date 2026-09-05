@@ -1,6 +1,6 @@
 # Angular V2
 
-## Aula 42 - Injetando um Serviço em outro Serviço
+## Aula 42 - Injetando um Serviço em Outro Serviço
 
 No Angular, a Injeção de Dependência permite injetar serviços dentro de outros serviços da mesma forma que fazemos nos componentes. O ponto fundamental para que isso funcione é o decorador `@Injectable()`.
 

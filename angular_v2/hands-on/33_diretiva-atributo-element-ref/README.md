@@ -1,6 +1,6 @@
 # Angular V2
 
-## Aula 33 - Criando uma diretiva de atributo ElementRef e Renderer
+## Aula 33 - Criando uma Diretiva de Atributo ElementRef e Renderer
 
 Diretivas de atributo alteram a aparência ou o comportamento de um elemento HTML existente. Para manipular o elemento de forma segura em Angular, `ElementRef` e `Renderer2` (evoluído do antigo `Renderer`) trabalham juntos.
 

@@ -1,6 +1,6 @@
 # Angular V2
 
-## Aula 07 - Serviços (Services) e Injeção de dependência (DI)
+## Aula 07 - Serviços (Services) e Injeção de Dependência (DI)
 
 ### Diagrama Comunicação Componente Serviço
 

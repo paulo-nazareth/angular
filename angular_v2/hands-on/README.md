@@ -8,13 +8,13 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
     <summary><b>Introdução</b></summary>
 
 * [01 - Introdução + Arquitetura](01_introducao_arquitetura/README.md)
-* [02 - Ambiente de desenvolvimento (Node.Js, TypeScript, Angular CLI)](02_ambiente-desenvolvimento/README.md)
+* [02 - Ambiente de Desenvolvimento (Node.Js, TypeScript, Angular CLI)](02_ambiente-desenvolvimento/README.md)
 * [03 - Hello, World - Criando Nosso Primeiro Projeto e Primeiro Componente](03_criando-primeiro-projeto/README.md)
 * [04 - Introdução ao Typescript para Angular](04_typescript-para-angular/README.md)
 * [05 - Módulos (ngModule)](05_modulos-ngModule/README.md)
 * [06 - Introdução aos Templates](06_templates/README.md)
 * [07 - Serviços (Services) e Injeção de dependência (DI)](07_servicos-injecao-dependencia/README.md)
-* [08 - Dica de produtividade: Plugins Angular, code snippets](08_dicas-plugins-e-temas/README.md)
+* [08 - Dica de Produtividade: Plugins Angular, code snippets](08_dicas-plugins-e-temas/README.md)
 
 </details>
 
@@ -36,8 +36,8 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 <details>
     <summary><b>Angular CLI: Introdução</b></summary>
 
-* [17 - Angular CLI: Instalação e criação de projetos: ng new e ng serve](17_angular-cli/README.md)
-* [18 - Angular CLI: Criando components, services: ng generate](18_angular-cli-ng-generate/README.md)
+* [17 - Angular CLI: Instalação e Criação de Projetos: ng new e ng serve](17_angular-cli/README.md)
+* [18 - Angular CLI: Criando Components, Services: ng generate](18_angular-cli-ng-generate/README.md)
 * Extra: Angular CLI: atualizando para versão RC5 (webpack)
 * [19 - Angular CLI: Usando pré-processadores (Sass, Less, Stylus)](19_pre-processadores-sass-less-stylus/README.md)
 * [20 - Angular CLI: ng lint, ng test, ng e2e](20_angular-cli-ng-lint-test-e2e/README.md)
@@ -93,7 +93,7 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 <details>
     <summary><b>Rotas</b></summary>
 
-* 49 - Rotas: Introdução
+* [49 - Rotas: Introdução](48_pipe-async/README.md)
 * 50 - Rotas: Configurando rotas simples
 * 51 - Rotas: RouterLink: definindo rotas no template
 * 52 - Rotas: Aplicando CSS em rotas ativas-k

@@ -1,6 +1,6 @@
 # Angular V2
 
-## Aula 19 - Angular CLI - Usando pré-processadores (Sass, Less, Stylus)
+## Aula 19 - Angular CLI - Usando Pré-processadores (Sass, Less, Stylus)
 
 O Angular CLI possui suporte nativo para os principais pré-processadores CSS: Sass/SCSS, Less e Stylus.
 

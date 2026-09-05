@@ -1,6 +1,6 @@
 # Angular V2
 
-## Aula 22 - Angular CLI - Fazendo build Desenvolvimento, Produção
+## Aula 22 - Angular CLI - Fazendo Build Desenvolvimento, Produção
 
 O processo de build no Angular pega todo o seu código em TypeScript, HTML, CSS (ou SCSS) e o converte para arquivos estáticos em JavaScript puro (ES), HTML e CSS, prontos para serem interpretados por qualquer navegador.
 
