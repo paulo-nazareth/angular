@@ -51,3 +51,18 @@ Configuração do Google Material Icons, Link CDN (Para inclusão via HTML), adi
 ```HTML
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 ```
+
+### Hash
+
+O Hash nas rotas (também conhecido como HashLocationStrategy) é uma estratégia de roteamento no Angular que utiliza o símbolo de cerquilha (`#`) na URL para simular a navegação entre páginas sem recarregar o navegador (exemplo: `[https://meusite.com/#/home](https://meusite.com/#/home)` ou `[https://meusite.com/#/sobre](https://meusite.com/#/sobre)`).
+
+#### Por que a cerquilha (#) é usada?
+
+Em navegadores web padrão, qualquer conteúdo enviado após a cerquilha (`#`) em uma URL é tratado como um identificador de fragmento local (usado originalmente para rolar a página até uma seção específica).
+
+Por padrão do protocolo HTTP, o navegador nunca envia a parte do `#` para o servidor web.
+
+URL solicitada ao servidor: `https://meusite.com/#/dashboard`
+Servidor recebe apenas: `https://meusite.com/`
+
+O servidor entrega o arquivo index.html da aplicação, e o roteador do Angular (no cliente) lê o trecho `#/dashboard` e renderiza o componente correspondente na tela.
