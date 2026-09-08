@@ -95,7 +95,7 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 
 * [49 - Rotas: Introdução](49_rotas-introducao/README.md)
 * [50 - Rotas: Configurando Rotas Simples](50_rotas-simples-configuracao/README.md)
-* 51 - Rotas: RouterLink: definindo rotas no template
+* [51 - Rotas: RouterLink: Definindo Rotas no Template](51_rotas-routerlink/README.md)
 * 52 - Rotas: Aplicando CSS em rotas ativas-k
 * 53 - Rotas: Definindo e extraindo parâmetros de roteamento
 * 54 - Rotas: Escutando mudanças nos parâmetros de roteamento
