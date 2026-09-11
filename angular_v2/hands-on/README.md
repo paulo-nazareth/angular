@@ -100,7 +100,7 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [53 - Rotas: Definindo e Extraindo Parâmetros de Roteamento](53_rotas-extraindo-parametros/README.md)
 * [54 - Rotas: Escutando Mudanças nos Parâmetros de Roteamento](54_rotas-escutando-mudanca-parametro/README.md)
 * [55 - Rotas Imperativas: Redirecionamento via Código](55_rotas-imperativas-redirecionamento/README.md)
-* 56 - Rotas: Definindo e extraindo parâmetros de url (query)
+* [56 - Rotas: Definindo e Extraindo Parâmetros de URL (query)](56_rotas-parametros-url/README.md)
 * 57 - Rotas: Criando um módulo de rotas
 * 58 - Criando um módulo de funcionalidade
 * 59 - Rotas: Criando um módulo de rotas de funcionalidade
