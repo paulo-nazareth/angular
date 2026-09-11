@@ -101,7 +101,7 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [54 - Rotas: Escutando Mudanças nos Parâmetros de Roteamento](54_rotas-escutando-mudanca-parametro/README.md)
 * [55 - Rotas Imperativas: Redirecionamento via Código](55_rotas-imperativas-redirecionamento/README.md)
 * [56 - Rotas: Definindo e Extraindo Parâmetros de URL (query)](56_rotas-parametros-url/README.md)
-* 57 - Rotas: Criando um módulo de rotas
+* [57 - Rotas: Criando um Módulo de Rotas](57_rotas-criando-modulo/README.md)
 * 58 - Criando um módulo de funcionalidade
 * 59 - Rotas: Criando um módulo de rotas de funcionalidade
 * 60 - Rotas Filhas
