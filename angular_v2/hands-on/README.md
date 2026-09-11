@@ -98,7 +98,7 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [51 - Rotas: RouterLink: Definindo Rotas no Template](51_rotas-routerlink/README.md)
 * [52 - Rotas: Aplicando CSS em Rotas Ativas](52_rotas-ativa-aplicando-css/README.md)
 * [53 - Rotas: Definindo e Extraindo Parâmetros de Roteamento](53_rotas-extraindo-parametros/README.md)
-* 54 - Rotas: Escutando mudanças nos parâmetros de roteamento
+* [54 - Rotas: Escutando Mudanças nos Parâmetros de Roteamento](54_rotas-escutando-mudanca-parametro/README.md)
 * 55 - Rotas Imperativas: Redirecionamento via código
 * 56 - Rotas: Definindo e extraindo parâmetros de url (query)
 * 57 - Rotas: Criando um módulo de rotas
