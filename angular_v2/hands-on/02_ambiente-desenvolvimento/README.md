@@ -70,8 +70,10 @@ npm install -g @angular/cli
 
 # Instalar a versão compatível do Angular CLI
 npm install -g @angular/cli@1.0.0
-# Devido a alguns erros apresentados tive que realizar a instação da versão 1.0.6
+# Instalar a versão compatível do Angular CLI (apresentou erros)
 npm install -g @angular/cli@1.0.6
+# Devido a alguns erros apresentados na versão 1.0.6, tive que realizar a instalação da versão .0.0-beta.28.3
+npm install -g angular-cli@1.0.0-beta.28.3
 ```
 
 **Nota Versão Anteriores**: Necessário informar a versão `@` + `Versão Desejada`.
@@ -91,6 +93,8 @@ Saída Esperada:
 Versões instaladas na máquina local
 
 ![versao-angular-utilizada](assets/versao-angular-utilizada.png)
+
+![versao-angular-beta](assets/versao-angular-beta.png)
 
 #### Desinstalando Angular
 

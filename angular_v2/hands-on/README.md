@@ -4,8 +4,9 @@
 
 Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre a seta para expandir todos os items.
 
-<details>
-    <summary><b>Introdução</b></summary>
+### Introdução
+<!-- <details>
+    <summary><b>Introdução</b></summary> -->
 
 * [01 - Introdução + Arquitetura](01_introducao_arquitetura/README.md)
 * [02 - Ambiente de Desenvolvimento (Node.Js, TypeScript, Angular CLI)](02_ambiente-desenvolvimento/README.md)
@@ -16,10 +17,11 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [07 - Serviços (Services) e Injeção de dependência (DI)](07_servicos-injecao-dependencia/README.md)
 * [08 - Dica de Produtividade: Plugins Angular, code snippets](08_dicas-plugins-e-temas/README.md)
 
-</details>
+<!-- </details> -->
 
-<details>
-    <summary><b>Data binding e eventos</b></summary>
+### Data binding e eventos
+<!--<details>
+    <summary><b>Data binding e eventos</b></summary> -->
 
 * [09 - Property binding + Interpolation](09_property-binding-interpolation/README.md)
 * [10 - Class e Style binding](10_class-style-binding-css/README.md)
@@ -30,11 +32,12 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [15 - Ciclo de vida (life-cycle) do Componente](15_ciclo-de-vida-componente/README.md)
 * [16 - Acesso ao DOM e ao Template com ViewChild](16_dom-template-viewchild/README.md)
 * Extra: Atualizações do RC 5 e ngModule
+<!-- 
+</details> -->
 
-</details>
-
-<details>
-    <summary><b>Angular CLI: Introdução</b></summary>
+### Angular CLI: Introdução
+<!-- <details>
+    <summary><b>Angular CLI: Introdução</b></summary> -->
 
 * [17 - Angular CLI: Instalação e Criação de Projetos: ng new e ng serve](17_angular-cli/README.md)
 * [18 - Angular CLI: Criando Components, Services: ng generate](18_angular-cli-ng-generate/README.md)
@@ -45,10 +48,11 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [22 - Angular CLI: Gerando build de Produção](22_gerando-build-dev-producao/README.md)
 * [23 - Angular CLI: instalando bibliotecas (bootstrap, materialize, lodash, jquery, etc)](23_instalando-bibliotecas/README.md)
 
-</details>
+<!-- </details> -->
 
-<details>
-    <summary><b>Diretivas</b></summary>
+### Diretivas
+<!-- <details>
+    <summary><b>Diretivas</b></summary> -->
 
 * [24 - Introdução e tipos de diretivas no Angular 2](24_introducao-diretivas/README.md)
 * [25 - Diretivas - ngIf](25_diretiva-ngif/README.md)
@@ -64,10 +68,11 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [35 - Input e Property Binding de Diretivas](35_diretiva-input-property-binding/README.md)
 * [36 - Criando uma diretiva de estrutura (ngElse)](36_criando-diretiva-ngelse/README.md)
 
-</details>
+<!-- </details> -->
 
-<details>
-    <summary><b>Serviço (Service) e Injeção de Dependência (DI)</b></summary>
+### Serviço (Service) e Injeção de Dependência (DI)
+<!-- <details>
+    <summary><b>Serviço (Service) e Injeção de Dependência (DI)</b></summary> -->
 
 * [37 - Introdução a Serviços (Services)](37_introducao-services/README.md)
 * [38 - Criando um Serviço (Service)](38_criando-servico/README.md)
@@ -76,10 +81,11 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [41 - Comunicação Entre Componentes Usando Serviços (broadcast e eventos)](41_comunicacao-componentes/README.md)
 * [42 - Injetando um Serviço em outro Serviço](42_injecao-servico-outro-servico/README.md)
 
-</details>
+<!-- </details> -->
 
-<details>
-    <summary><b>Pipes</b></summary>
+### Pipes
+<!-- <details>
+    <summary><b>Pipes</b></summary> -->
 
 * [43 - Pipes (usando pipes, parâmetros e pipes aninhados)](43_pipes-aninhados-parametros/README.md)
 * [44 - Criando um Pipe](44_criando-pipe/README.md)
@@ -88,10 +94,11 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [47 - Pipes - Criando um Pipe "Impuro"](47_pipe-impuro/README.md)
 * [48 - Pipes: Async](48_pipe-async/README.md)
 
-</details>
+<!-- </details> -->
 
-<details>
-    <summary><b>Rotas</b></summary>
+### Rotas
+<!-- <details>
+    <summary><b>Rotas</b></summary> -->
 
 * [49 - Rotas: Introdução](49_rotas-introducao/README.md)
 * [50 - Rotas: Configurando Rotas Simples](50_rotas-simples-configuracao/README.md)
@@ -101,26 +108,27 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [54 - Rotas: Escutando Mudanças nos Parâmetros de Roteamento](54_rotas-escutando-mudanca-parametro/README.md)
 * [55 - Rotas Imperativas: Redirecionamento via Código](55_rotas-imperativas-redirecionamento/README.md)
 * [56 - Rotas: Definindo e Extraindo Parâmetros de URL (query)](56_rotas-parametros-url/README.md)
-* [57 - Rotas: Criando um Módulo de Rotas](57_rotas-criando-modulo/README.md)
-* 58 - Criando um módulo de funcionalidade
-* 59 - Rotas: Criando um módulo de rotas de funcionalidade
+* [57 - Rotas: Criando um Módulo de Rotas](57_rotas-criando-modulo-rotas/README.md)
+* [58 - Criando um Módulo de Funcionalidade](58_rotas-criando-modulo-funcionalidades/README.md)
+* [59 - Rotas: Criando um Módulo de Rotas de Funcionalidade]
 * 60 - Rotas Filhas
-* 61 - Rotas Filhas: desenvolvendo as telas
-* 62 - Rotas: Dica de Performance: Carregamento sob demanda (lazy loading)
+* 61 - Rotas Filhas: Desenvolvendo as Telas
+* 62 - Rotas: Dica de Performance: Carregamento Sob Demanda (lazy loading)
 * 63 - Rotas: Tela de Login e como não mostrar o Menu (NavBar)
 * 64 - Usando Guarda de Rotas: CanActivate
 * 65 - Usando Guarda de Rotas: CanActivateChild
 * 66 - Usando Guarda de Rotas: CanDeactivate
 * 67 - Usando Guarda de Rotas: CanDeactivate com Interface Genérica
-* 68 - Resolve: carregando dados antes da rota ser ativada
-* 69 - CanLoad: como não carregar a rota/módulo sem permissão
-* 70 - Definindo rota padrão e wildcard (rota não encontrada)
-* 71 - Estilo de url: HTML5 ou usando #
+* 68 - Resolve: Carregando Dados antes da Rota ser Ativada
+* 69 - CanLoad: Como Não Carregar a Rota/Módulo Sem Permissão
+* 70 - Definindo Rota Padrão e Wildcard (Rota Não Encontrada)
+* 71 - Estilo de URL: HTML5 ou usando #
 
-</details>
+<!-- </details> -->
 
-<details>
-    <summary><b>Formulários (Templates)</b></summary>
+### Formulários (Templates)
+<!-- <details>
+    <summary><b>Formulários (Templates)</b></summary> -->
 
 * 72 - Formulários (template vs data / reativo) Introdução
 * 73 - Formulários - Criando o projeto inicial com Bootstrap 3
@@ -139,10 +147,11 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * 86 - Forms (template driven) Populando campos com setValue e patchValue (CEP)
 * 87 - Forms (template driven) Submetendo valores com HTTP POST
 
-</details>
+<!-- </details> -->
 
-<details>
-    <summary><b>Formulários (Reativos)</b></summary>
+### Formulários (Reativos)
+<!-- <details>
+    <summary><b>Formulários (Reativos)</b></summary> -->
 
 * 88 - Formulários reativos (data driven) Introdução
 * 89 - Formulários reativos: Configuração (Módulo e Componente)
@@ -174,10 +183,11 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * 115 - Formulários reativos: Classe base para Forms (herança no Angular)
 * 116 - Formulários reativos: Combobox aninhado: Estado + Cidade
 
-</details>
+<!-- </details> -->
 
-<details>
-    <summary><b>Integração com server</b></summary>
+### Integração com Server
+<!-- <details>
+    <summary><b>Integração com server</b></summary> -->
 
 * 117 - Http / HttpClient: Introdução
 * 118 - Instalando Bootstrap 4
@@ -187,7 +197,7 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * 122 - Http GET + Pipe Async
 * 123 - Http + RxJS: Unsubscribe Automático
 
-</details>
+<!-- </details> -->
 
 ### Link do curso:
 
