@@ -6,7 +6,7 @@ import { AlunoDetalheComponent } from "./aluno-detalhe/aluno-detalhe.component";
 import { AlunoFormComponent } from "./aluno-form/aluno-form.component";
 
 const alunosRoutes: Routes = [
-    { path: 'alunos', component: AlunosComponent,
+    { path: '', component: AlunosComponent,
         // Rotas Filhas (children) 
         children: [
         // Rota para formulário de novo aluno (ex: /alunos/novo)
