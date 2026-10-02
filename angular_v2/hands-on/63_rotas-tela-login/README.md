@@ -9,6 +9,13 @@ Para criação do autenticação criaremos um novo serviço, chamado `AuthServic
 ng g s login/auth
 ```
 
-Declarando no `app.module.ts`, para viabilizar a injeção de dependência.
+Declarado no `app.module.ts`, para viabilizar a injeção de dependência.
 
 Também foi realizado a criação de um objeto Usuario, manualmente (`login/usuario.ts`).
+
+```TypeScript
+export class Usuario {
+    nome: string;
+    senha: string;
+}
+```
