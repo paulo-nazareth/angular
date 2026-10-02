@@ -113,7 +113,7 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [59 - Rotas: Criando um Módulo de Rotas de Funcionalidade](59_rotas-criando-modulo-rota-funcionalidades/README.md)
 * [60 - Rotas Filhas](60_rotas-filhas/README.md)
 * [61 - Rotas Filhas: Desenvolvendo as Telas](61_rotas-filhas-telas/README.md)
-* 62 - Rotas: Dica de Performance: Carregamento Sob Demanda (lazy loading)
+* [62 - Rotas: Dica de Performance: Carregamento Sob Demanda (lazy loading)](62_rotas-lazy-loading/README.md)
 * 63 - Rotas: Tela de Login e como não mostrar o Menu (NavBar)
 * 64 - Usando Guarda de Rotas: CanActivate
 * 65 - Usando Guarda de Rotas: CanActivateChild
