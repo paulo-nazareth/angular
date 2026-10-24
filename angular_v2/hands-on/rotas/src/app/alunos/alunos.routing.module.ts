@@ -4,9 +4,11 @@ import { RouterModule, Routes } from "@angular/router";
 import { AlunosComponent } from "./alunos.component";
 import { AlunoDetalheComponent } from "./aluno-detalhe/aluno-detalhe.component";
 import { AlunoFormComponent } from "./aluno-form/aluno-form.component";
+import { AlunosGuard } from "app/guards/alunos.guard";
 
 const alunosRoutes: Routes = [
     { path: '', component: AlunosComponent,
+        canActivateChild: [ AlunosGuard ],
         // Rotas Filhas (children) 
         children: [
         // Rota para formulário de novo aluno (ex: /alunos/novo)
