@@ -117,7 +117,7 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [63 - Rotas: Tela de Login e como não mostrar o Menu (NavBar)](63_rotas-tela-login/README.md)
 * [64 - Usando Guarda de Rotas: CanActivate](64_rotas-guard-canActivate/README.md)
 * [65 - Usando Guarda de Rotas: CanActivateChild](65_rotas-guard-canActivateChild/README.md)
-* 66 - Usando Guarda de Rotas: CanDeactivate
+* [66 - Usando Guarda de Rotas: CanDeactivate](66_rotas-guard-canDeactivate/README.md)
 * 67 - Usando Guarda de Rotas: CanDeactivate com Interface Genérica
 * 68 - Resolve: Carregando Dados antes da Rota ser Ativada
 * 69 - CanLoad: Como Não Carregar a Rota/Módulo Sem Permissão

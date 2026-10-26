@@ -12,6 +12,7 @@ export class AlunoFormComponent implements OnInit {
 
   aluno: any = {};
   inscricao: Subscription;
+  private formaMudou: boolean = false;
 
   constructor(
     private route: ActivatedRoute,
@@ -36,4 +37,15 @@ export class AlunoFormComponent implements OnInit {
     this.inscricao.unsubscribe();
   }
 
+  onInput(){
+    this.formaMudou = true;
+    console.log("Nome Alterado");
+  }
+
+  podeMudarRota(){
+    if(this.formaMudou){
+      confirm('Tem certeza que deseja sair desta página?');
+    }
+    return true;
+  }
 }

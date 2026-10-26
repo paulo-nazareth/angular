@@ -5,6 +5,7 @@ import { AlunosComponent } from "./alunos.component";
 import { AlunoDetalheComponent } from "./aluno-detalhe/aluno-detalhe.component";
 import { AlunoFormComponent } from "./aluno-form/aluno-form.component";
 import { AlunosGuard } from "app/guards/alunos.guard";
+import { AlunosDeactivateGuard } from "app/guards/alunos.deactivate.guard";
 
 const alunosRoutes: Routes = [
     { path: '', component: AlunosComponent,
@@ -18,7 +19,9 @@ const alunosRoutes: Routes = [
         { path: ':id', component: AlunoDetalheComponent },
 
         // Rota para editar um aluno existente (ex: /alunos/10/editar)
-        { path: ':id/editar', component: AlunoFormComponent }
+        { path: ':id/editar', component: AlunoFormComponent,
+            canDeactivate: [ AlunosDeactivateGuard ]
+        }
     ] }
 ];
 

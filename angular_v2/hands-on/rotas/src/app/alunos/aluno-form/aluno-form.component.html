@@ -9,7 +9,7 @@
     </div>
     <div class="row">
       <div class="input-field col s6">
-        <input placeholder="Placeholder" [(ngModel)]="aluno.nome" id="nome" type="text">
+        <input placeholder="Placeholder" [(ngModel)]="aluno.nome" id="nome" type="text" (input)="onInput()">
         <label for="nome" class="active">Nome</label>
       </div>
       <div class="input-field col s6">
