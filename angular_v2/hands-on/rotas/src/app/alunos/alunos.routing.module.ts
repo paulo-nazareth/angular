@@ -6,6 +6,7 @@ import { AlunoDetalheComponent } from "./aluno-detalhe/aluno-detalhe.component";
 import { AlunoFormComponent } from "./aluno-form/aluno-form.component";
 import { AlunosGuard } from "app/guards/alunos.guard";
 import { AlunosDeactivateGuard } from "app/guards/alunos.deactivate.guard";
+import { AlunoDetalheResolver } from "./guards/aluno-detalhe.resolver";
 
 const alunosRoutes: Routes = [
     { path: '', component: AlunosComponent,
@@ -16,7 +17,9 @@ const alunosRoutes: Routes = [
         { path: 'novo', component: AlunoFormComponent },
 
         // Rota para detalhar um aluno específico por ID (ex: /alunos/10)
-        { path: ':id', component: AlunoDetalheComponent },
+        { path: ':id', component: AlunoDetalheComponent,
+            resolve: { aluno: AlunoDetalheResolver }
+         },
 
         // Rota para editar um aluno existente (ex: /alunos/10/editar)
         { path: ':id/editar', component: AlunoFormComponent,

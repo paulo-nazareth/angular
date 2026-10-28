@@ -119,7 +119,7 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [65 - Usando Guarda de Rotas: CanActivateChild](65_rotas-guard-canActivateChild/README.md)
 * [66 - Usando Guarda de Rotas: CanDeactivate](66_rotas-guard-canDeactivate/README.md)
 * [67 - Usando Guarda de Rotas: CanDeactivate com Interface Genérica](67_rotas-guard-canDeactivate-generico/README.md)
-* 68 - Resolve: Carregando Dados antes da Rota ser Ativada
+* [68 - Resolve: Carregando Dados antes da Rota ser Ativada](68_rotas-resolve/README.md)
 * 69 - CanLoad: Como Não Carregar a Rota/Módulo Sem Permissão
 * 70 - Definindo Rota Padrão e Wildcard (Rota Não Encontrada)
 * 71 - Estilo de URL: HTML5 ou usando #

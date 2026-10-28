@@ -8,6 +8,7 @@ import { AlunoDetalheComponent } from './aluno-detalhe/aluno-detalhe.component';
 import { AlunosService } from "./alunos.service";
 import { AlunosRoutingModule } from "./alunos.routing.module";
 import { AlunosDeactivateGuard } from "app/guards/alunos.deactivate.guard";
+import { AlunoDetalheResolver } from "./guards/aluno-detalhe.resolver";
 
 @NgModule({
     /* O BrowserModule só pode ser declarado no app.module.ts, nos demais módulos é declarado o CommonModule */
@@ -24,7 +25,8 @@ import { AlunosDeactivateGuard } from "app/guards/alunos.deactivate.guard";
     ],
     providers: [ 
         AlunosService,
-        AlunosDeactivateGuard
+        AlunosDeactivateGuard,
+        AlunoDetalheResolver
     ]
 })
 export class AlunosModule {

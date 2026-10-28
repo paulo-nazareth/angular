@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 
 import { AlunosService } from '../alunos.service';
+import { Aluno } from '../aluno';
 
 @Component({
   selector: 'app-aluno-detalhe',
@@ -11,7 +12,7 @@ import { AlunosService } from '../alunos.service';
 })
 export class AlunoDetalheComponent implements OnInit {
 
-  aluno:any;
+  aluno: Aluno;
   inscricao: Subscription;
 
   constructor(
@@ -21,12 +22,23 @@ export class AlunoDetalheComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.inscricao = this.route.params.subscribe(
-      (params: any) => {
-        let id = params['id'];
-        this.aluno = this.alunosService.getAluno(id);
+    /* Implementado através do AlunoDetalheResolver */
+    // this.inscricao = this.route.params.subscribe(
+    //   (params: any) => {
+    //     let id = params['id'];
+    //     this.aluno = this.alunosService.getAluno(id);
+    //   }
+    // );
+    console.log("ngOnInit: AlunoDetalheComponent");
+
+    this.inscricao = this.route.data.subscribe(
+      (info: {aluno: Aluno}) => {
+        // console.log(info); // Ver o que esta sendo passado
+        console.log("Recebendo Aluno do Resolver");
+        this.aluno = info.aluno;
       }
     );
+
   }
 
   ngOnDestroy(){
