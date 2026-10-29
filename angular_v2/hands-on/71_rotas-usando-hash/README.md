@@ -40,3 +40,15 @@ const routes: Routes = [
 })
 export class AppModule { }
 ```
+
+Mas na implementação realizada na aula, foi aplicada a todas as páginas do projeto, configurando o `useHash: true` diretamente no arquivo `app.routing.module.ts`.
+
+```TypeScript
+@NgModule({
+    imports: [ RouterModule.forRoot(appRoutes, { useHash: true }) ],
+    exports: [ RouterModule ]
+})
+export class AppRoutingModule {
+
+}
+```
