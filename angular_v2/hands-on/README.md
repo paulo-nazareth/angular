@@ -131,7 +131,7 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
     <summary><b>Formulários (Templates)</b></summary> -->
 
 * [72 - Formulários (template vs data / reativo) Introdução](72_formularios-template-drive/README.md)
-* 73 - Formulários - Criando o projeto inicial com Bootstrap 3
+* [73 - Formulários - Criando o projeto inicial com Bootstrap 3](73_formularios-projeto-inicial/README.md)
 * 74 - Forms (template driven) Controles ngForm, ngSubmit e ngModel
 * 75 - Forms (template driven) Inicializando valores com ngModel
 * 76 - Forms (template driven) Módulos e FormsModule
