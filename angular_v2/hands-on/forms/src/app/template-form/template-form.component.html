@@ -1,18 +1,27 @@
 <form #f="ngForm" (ngSubmit)="onSubmit(f)">
-  <div class="form-group">
-    <label for="nome">Nome</label>
+  <div class="form-group" 
+      [class.has-error]="!nome.valid && nome.touched"
+      [class.has-feedback]="!nome.valid && nome.touched">
+    <label for="nome" class="control-label">Nome</label>
     <input type="text" id="nome" class="form-control" placeholder="Nome" 
-      [(ngModel)]="usuario.nome" name="nome" required #nome>
-    <div>{{ nome.className }}</div>
+      [(ngModel)]="usuario.nome" name="nome" required #nome="ngModel">
+    <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true" *ngIf="!nome.valid && nome.touched"></span>
+    <span class="sr-only" id="nome" *ngIf="!nome.valid && nome.touched">(error)</span>
+    <div *ngIf="!nome.valid && nome.touched" class="alert alert-danger" role="alert">Nome é obrigatório.</div>
+    <!-- <div>{{ nome.className }}</div> Apresentar as classes do input, necessário informar o nome do atributo #nome  -->
   </div>
   
-  <div class="form-group">
-    <label for="email">E-mail</label>
+  <div class="form-group" [class.has-error]="!email.valid && email.touched" [class.has-feedback]="!email.valid && email.touched">
+    <label for="email" class="control-label">E-mail</label>
     <input type="email" id="email" class="form-control" placeholder="nome@email.com"
       [(ngModel)]="usuario.email" name="email" required 
       pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
-      #email>
-    <div>{{ email.className }}</div>
+      #email="ngModel">
+    <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true" *ngIf="!email.valid && email.touched"></span>
+    <span class="sr-only" id="email" *ngIf="!email.valid && email.touched">(error)</span>
+    <div *ngIf="!email.valid && email.touched" 
+      class="alert alert-danger" role="alert">E-mail inválido.
+    </div>
   </div>
 
   <button type="submit" class="btn btn-primary">Submit</button>

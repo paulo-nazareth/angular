@@ -20,8 +20,8 @@ export class TemplateFormComponent implements OnInit {
 
   onSubmit(form: NgForm){
     console.log(form);
-    console.log(form.value);
-    console.log(this.usuario);
+    // console.log(form.value);
+    // console.log(this.usuario);
   }
 
   // Regex definida como objeto nativo do JS (evita o erro de compilação do HTML)
