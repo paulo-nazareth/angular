@@ -23,4 +23,7 @@ export class TemplateFormComponent implements OnInit {
     console.log(form.value);
     console.log(this.usuario);
   }
+
+  // Regex definida como objeto nativo do JS (evita o erro de compilação do HTML)
+  emailPattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?)*$/;
 }

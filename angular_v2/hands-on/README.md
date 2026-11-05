@@ -134,8 +134,8 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [73 - Formulários - Criando o projeto inicial com Bootstrap 3](73_formularios-projeto-inicial/README.md)
 * [74 - Forms (template driven) Controles ngForm, ngSubmit e ngModel](74_formularios-ngForm-ngSubmit-ngModel/README.md)
 * [75 - Forms (template driven) Inicializando valores com ngModel](75_formularios-inicializar-valores/README.md)
-* 76 - Forms (template driven) Módulos e FormsModule
-* 77 - Forms (template driven) Aplicando validação nos campos
+* [76 - Forms (template driven) Módulos e FormsModule](76_formularios-modulos-formModule/README.md)
+* [77 - Forms (template driven) Aplicando validação nos campos](77_formularios-validacao-campos/README.md)
 * 78 - Forms (template driven) Aplicando CSS na validação dos campos
 * 79 - Forms (template driven) Mostrando mensagens de erro de validação
 * 80 - Forms (template driven) Desabilitando o botão de submit para formulário inválido
