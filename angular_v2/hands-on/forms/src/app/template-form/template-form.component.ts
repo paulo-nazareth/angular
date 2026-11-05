@@ -9,8 +9,8 @@ import { NgForm } from '@angular/forms';
 export class TemplateFormComponent implements OnInit {
 
   usuario: any = {
-    nome: 'paulo',
-    email: 'paulo@email.com'
+    nome: null,
+    email: null
   }
 
   constructor() { }
@@ -25,5 +25,5 @@ export class TemplateFormComponent implements OnInit {
   }
 
   // Regex definida como objeto nativo do JS (evita o erro de compilação do HTML)
-  emailPattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?)*$/;
+  /*emailPattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?)*$/;*/
 }

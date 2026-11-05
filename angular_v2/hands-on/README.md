@@ -136,7 +136,7 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [75 - Forms (template driven) Inicializando valores com ngModel](75_formularios-inicializar-valores/README.md)
 * [76 - Forms (template driven) Módulos e FormsModule](76_formularios-modulos-formModule/README.md)
 * [77 - Forms (template driven) Aplicando validação nos campos](77_formularios-validacao-campos/README.md)
-* 78 - Forms (template driven) Aplicando CSS na validação dos campos
+* [78 - Forms (template driven) Aplicando CSS na validação dos campos](78_formularios-validacao-css-campos/README.md)
 * 79 - Forms (template driven) Mostrando mensagens de erro de validação
 * 80 - Forms (template driven) Desabilitando o botão de submit para formulário inválido
 * 81 - Forms (Dica): Verificando dados do Form no template com JSON
