@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { NgForm, NgModel } from '@angular/forms';
 
 @Component({
   selector: 'app-template-form',
@@ -9,8 +9,8 @@ import { NgForm } from '@angular/forms';
 export class TemplateFormComponent implements OnInit {
 
   usuario: any = {
-    nome: null,
-    email: null
+    nome: "",
+    email: ""
   }
 
   constructor() { }
@@ -26,4 +26,15 @@ export class TemplateFormComponent implements OnInit {
 
   // Regex definida como objeto nativo do JS (evita o erro de compilação do HTML)
   /*emailPattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?)*$/;*/
+
+  verificaValidTouched(campo: NgModel){
+    return !campo.valid && campo.touched;
+  }
+
+  aplicaCssErro(campo: NgModel){
+    return {
+        'has-error': this.verificaValidTouched(campo),
+        'has-feedback': this.verificaValidTouched(campo)
+    }
+  }
 }
