@@ -144,7 +144,7 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [83 - Forms (template driven) Refatorando (simplificando) CSS e Mensagens de Erro](83_formularios-refatorar-reaproveitar/README.md)
 * [84 - Forms (template driven) Form groups (agrupando dados)](84_formularios-form-groups/README.md)
 * [85 - Forms (template driven) Pesquisando Endereço Automaticamente com CEP](85_formularios-integracao-via-cep/README.md)
-* 86 - Forms (template driven) Populando Campos com setValue e patchValue (CEP)
+* [86 - Forms (template driven) Populando Campos com setValue e patchValue (CEP)](86_formularios-setValue-patchValue/README.md)
 * 87 - Forms (template driven) Submetendo Valores com HTTP POST
 
 <!-- </details> -->
