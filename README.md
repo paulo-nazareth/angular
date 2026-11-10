@@ -89,3 +89,7 @@ Embora o Angular seja mantido oficialmente pela Google, a Microsoft teve um pape
 ### Site Principal
 
 https://angular.io
+
+URL correspondente a versão 2
+
+https://v2.angular.io/docs/ts/latest/
