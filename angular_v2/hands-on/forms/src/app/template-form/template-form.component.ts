@@ -25,6 +25,10 @@ export class TemplateFormComponent implements OnInit {
     console.log(form);
     // console.log(form.value);
     // console.log(this.usuario);
+    // this.http.post('endereco-servidor/form-usuario', JSON.stringify(form.value))
+    this.http.post('https://httpbin.org/post', JSON.stringify(form.value))
+        .map(res => res)
+        .subscribe(dados => console.log(dados));
   }
 
   // Regex definida como objeto nativo do JS (evita o erro de compilação do HTML)

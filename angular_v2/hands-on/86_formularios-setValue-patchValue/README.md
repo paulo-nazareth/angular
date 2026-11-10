@@ -117,3 +117,7 @@ export class ConsultaPatchComponent {
 
 - **Sincronização de Estado**: Atualizar via `f.form.patchValue()` garante que o Angular reconheça que os campos foram modificados programaticamente, atualizando automaticamente os estados de validação (`ng-dirty`, `ng-valid`) e o objeto `f.value`.
 - **Organização**: Permite injetar dados aninhados respeitando a estrutura do `ngModelGroup` (`endereco: { ... }`) sem precisar acessar propriedades profundas da classe manualmente uma a uma.
+
+### URL Rest Test (Validar Requisição Post)
+
+https://httpbin.org/get
