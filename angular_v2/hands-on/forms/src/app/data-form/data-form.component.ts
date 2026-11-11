@@ -15,9 +15,9 @@ export class DataFormComponent implements OnInit {
   ngOnInit() {
     /* 1º Forma de Criar um Formulário */
     // this.formulario = new FormGroup({
-      //   nome: new FormControl(null), // Pode ser Informado um Valor Inicial new FormControl('Paulo')
-      //   email: new FormControl(null)
-      // });
+    //   nome: new FormControl(null), // Pode ser Informado um Valor Inicial new FormControl('Paulo')
+    //   email: new FormControl(null)
+    // });
       
     /* 2º Forma de Criar um Formulário */
     this.formulario = this.formBuilder.group({
