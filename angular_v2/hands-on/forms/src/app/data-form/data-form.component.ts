@@ -32,9 +32,23 @@ export class DataFormComponent implements OnInit {
 
   onSubmit(){
     console.log(this.formulario);
-    this.http.post('https://httpbin.org/post', JSON.stringify(this.formulario.value))
-        .map(res => res)
-        .subscribe(dados => console.log(dados));
+    this.http.post(
+          'https://httpbin.org/po1st', 
+          JSON.stringify(this.formulario.value)
+        ).map(res => res)
+        .subscribe(
+          dados => {
+            console.log(dados);
+            // Reseta o formulário após o sucesso do envio
+            this.formulario.reset();
+          },
+          (error: any) => alert('Erro: ' + error)
+        );
+  }
+
+  resetar(){
+    // Reseta o formulário
+    this.formulario.reset();
   }
 
 }

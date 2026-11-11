@@ -21,14 +21,20 @@ export class TemplateFormComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSubmit(form: NgForm){
-    console.log(form);
-    // console.log(form.value);
+  onSubmit(formulario: NgForm){
+    console.log(formulario);
+    // console.log(formulario.value);
     // console.log(this.usuario);
-    // this.http.post('endereco-servidor/form-usuario', JSON.stringify(form.value))
-    this.http.post('https://httpbin.org/post', JSON.stringify(form.value))
+    // this.http.post('endereco-servidor/form-usuario', JSON.stringify(formulario.value))
+    this.http.post('https://httpbin.org/post', JSON.stringify(formulario.value))
         .map(res => res)
-        .subscribe(dados => console.log(dados));
+        .subscribe(
+          dados => {
+            console.log(dados);
+            formulario.form.reset();
+          },
+          (error => alert('Error: '+ error))
+        );
   }
 
   // Regex definida como objeto nativo do JS (evita o erro de compilação do HTML)
