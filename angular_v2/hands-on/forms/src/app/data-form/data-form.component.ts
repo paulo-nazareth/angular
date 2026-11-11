@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Http } from '@angular/http';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-data-form',
@@ -25,15 +25,17 @@ export class DataFormComponent implements OnInit {
       
     /* 2º Forma de Criar um Formulário */
     this.formulario = this.formBuilder.group({
-      nome: [null],
-      email: [null]
+      // nome: [ null, [ Validators.required, Validators.minLength(3), Validators.maxLength(200) ] ],
+      nome: [ null, Validators.required ],
+      //email: [ null, [ Validators.required, Validators.email ]] // Na versão 2, não possui o Validators.email, por isto a validação foi realizada através de uma expressão regular (pattern)
+      email: [ null, [ Validators.required, Validators.pattern("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?") ]]
     });
   }
 
   onSubmit(){
     console.log(this.formulario);
     this.http.post(
-          'https://httpbin.org/po1st', 
+          'https://httpbin.org/post', 
           JSON.stringify(this.formulario.value)
         ).map(res => res)
         .subscribe(
