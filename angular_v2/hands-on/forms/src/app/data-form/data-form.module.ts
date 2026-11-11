@@ -5,12 +5,14 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { DataFormComponent } from './data-form.component';
 import { FormDebugComponent } from 'app/shared/form-debug/form-debug.component';
 import { SharedModule } from 'app/shared/shared.module';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    SharedModule
+    SharedModule,
+    HttpModule
   ],
   declarations: [
     DataFormComponent
