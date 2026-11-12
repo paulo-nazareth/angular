@@ -53,4 +53,26 @@ export class DataFormComponent implements OnInit {
     this.formulario.reset();
   }
 
+  verificaValidTouched(campo: string){
+    // this.formulario.controls(campo)
+    return !this.formulario.get(campo).valid && this.formulario.get(campo).touched;
+  }
+
+  // Não funcionou corretamente devido a versão do Angular, na versão dois não possui a validação nativa para email, foi necessário substituir pelo pattern
+  verificaEmailInvalido(){
+    let campoEmail = this.formulario.get('email');
+    if (campoEmail.errors){
+      console.log(campoEmail);
+      // return campoEmail.errors['email'] && campoEmail.touched;
+      return campoEmail.errors['pattern'] && campoEmail.touched;
+    }
+  }
+
+  aplicaCssErro(campo: string){
+    return {
+      'has-error': this.verificaValidTouched(campo),
+      'has-feedback': this.verificaValidTouched(campo)
+    }
+  }
+
 }
