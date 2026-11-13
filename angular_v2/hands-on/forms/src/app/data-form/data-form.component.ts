@@ -28,7 +28,14 @@ export class DataFormComponent implements OnInit {
       // nome: [ null, [ Validators.required, Validators.minLength(3), Validators.maxLength(200) ] ],
       nome: [ null, Validators.required ],
       //email: [ null, [ Validators.required, Validators.email ]] // Na versão 2, não possui o Validators.email, por isto a validação foi realizada através de uma expressão regular (pattern)
-      email: [ null, [ Validators.required, Validators.pattern("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?") ]]
+      email: [ null, [ Validators.required, Validators.pattern("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?") ]],
+      cep: [ null, Validators.required ],
+      rua: [ null, Validators.required ],
+      numero: [ null, Validators.required ],
+      complemento: [ null ],
+      bairro: [ null, Validators.required ],
+      cidade: [ null, Validators.required ],
+      estado: [ null, Validators.required ],
     });
   }
 
