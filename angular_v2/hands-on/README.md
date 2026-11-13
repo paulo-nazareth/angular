@@ -163,7 +163,7 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [95 - Formulários Reativos: Acesso ao FormControl no HTML e CSS de Validação dos Campos](95_formularios-reativo-formControl/README.md)
 * [96 - Formulários Reativos: Endereço (Migrando de Template Driven para form reativo)](96_formularios-reativo-migrando-endereco/README.md)
 * [97 - Formulários Reativos: Form groups (Agrupando Dados)](97_formularios-reativo-form-groups/README.md)
-* 98 - Formulários Reativos: Autopopulando Endereço com CEP (setValue e patchValue)
+* [98 - Formulários Reativos: Autopopulando Endereço com CEP (setValue e patchValue)](98_formularios-reativo-setValue-patchValue/README.md)
 * 99 - Formulários Reativos: Verificar Validação dos Campos com Botão submit
 * 100 - Formulários: Criando um Serviço de Estados Brasileiros
 * 101 - Formulários: Serviço de Consulta CEP + provideIn

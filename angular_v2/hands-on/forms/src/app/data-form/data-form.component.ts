@@ -93,4 +93,59 @@ export class DataFormComponent implements OnInit {
     }
   }
 
+  consultaCEP(){
+    var cepControl = this.formulario.get('endereco.cep');
+    var cep = cepControl ? cepControl.value : ''.replace(/\D/g, '');
+
+    //Verifica se campo cep possui valor informado.
+    if (cep != "") {
+        //Expressão regular para validar o CEP.
+        var validacep = /^[0-9]{8}$/;
+        //Valida o formato do CEP.
+        if(validacep.test(cep)) {
+          this.resetar();
+
+          // this.http.get("https://viacep.com.br/ws/"+ cep +"/json"); Substituido pelo Template Literal, exemplo abaixo
+          this.http.get(`https://viacep.com.br/ws/${cep}/json`)
+            .map(dados => dados.json())
+            // .subscribe(function(dados){});
+            .subscribe(dados => this.popularDadosForm(dados));
+        }
+    }
+  }
+
+  popularDadosForm(dados: any){
+    console.log();
+    // 1. USANDO PATCHVALUE (Recomendado para preenchimentos parciais de API)
+    this.formulario.patchValue({
+      endereco: {
+        cep: dados.cep,
+        rua: dados.logradouro,
+        complemento: dados.complemento,
+        bairro: dados.bairro,
+        cidade: dados.localidade,
+        estado: dados.uf
+      }
+    });
+
+    /* 
+      Nota sobre setValue():
+      Se você quisesse usar o setValue(), seria obrigado a informar 
+      TODOS os campos do grupo 'endereco', incluindo o próprio cep:
+
+      this.formulario.setValue({
+        endereco: {
+          cep: cep, // obrigatório passar se não quiser que limpe
+          rua: dados.logradouro,
+          bairro: dados.bairro,
+          cidade: dados.localidade,
+          estado: dados.uf
+        }
+      });
+    */
+
+    /* Exemplo de setValue Exclusivo */
+    this.formulario.get('endereco.numero').setValue('0');
+  }
+
 }
