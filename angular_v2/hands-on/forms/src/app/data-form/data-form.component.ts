@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Http } from '@angular/http';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-data-form',
@@ -20,7 +20,16 @@ export class DataFormComponent implements OnInit {
     /* 1º Forma de Criar um Formulário */
     // this.formulario = new FormGroup({
     //   nome: new FormControl(null), // Pode ser Informado um Valor Inicial new FormControl('Paulo')
-    //   email: new FormControl(null)
+    //   email: new FormControl(null),
+    //   endereco: new FormGroup({
+    //     cep: new FormControl(null),
+    //     rua: new FormControl(null),
+    //     numero: new FormControl(null),
+    //     complemento: new FormControl(null),
+    //     bairro: new FormControl(null),
+    //     cidade: new FormControl(null),
+    //     estado: new FormControl(null),
+    //   })
     // });
       
     /* 2º Forma de Criar um Formulário */
@@ -29,13 +38,15 @@ export class DataFormComponent implements OnInit {
       nome: [ null, Validators.required ],
       //email: [ null, [ Validators.required, Validators.email ]] // Na versão 2, não possui o Validators.email, por isto a validação foi realizada através de uma expressão regular (pattern)
       email: [ null, [ Validators.required, Validators.pattern("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?") ]],
-      cep: [ null, Validators.required ],
-      rua: [ null, Validators.required ],
-      numero: [ null, Validators.required ],
-      complemento: [ null ],
-      bairro: [ null, Validators.required ],
-      cidade: [ null, Validators.required ],
-      estado: [ null, Validators.required ],
+      endereco: this.formBuilder.group({
+        cep: [ null, Validators.required ],
+        rua: [ null, Validators.required ],
+        numero: [ null, Validators.required ],
+        complemento: [ null ],
+        bairro: [ null, Validators.required ],
+        cidade: [ null, Validators.required ],
+        estado: [ null, Validators.required ]
+      })
     });
   }
 
