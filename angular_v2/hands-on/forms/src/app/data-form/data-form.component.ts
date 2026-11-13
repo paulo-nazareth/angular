@@ -52,18 +52,40 @@ export class DataFormComponent implements OnInit {
 
   onSubmit(){
     console.log(this.formulario);
-    this.http.post(
-          'https://httpbin.org/post', 
-          JSON.stringify(this.formulario.value)
-        ).map(res => res)
-        .subscribe(
-          dados => {
-            console.log(dados);
-            // Reseta o formulário após o sucesso do envio
-            this.formulario.reset();
-          },
-          (error: any) => alert('Erro: ' + error)
-        );
+
+    if(this.formulario.valid){
+      this.http
+          .post(
+            'https://httpbin.org/post', 
+            JSON.stringify(this.formulario.value)
+          ).map(res => res)
+          .subscribe(
+            dados => {
+              console.log(dados);
+              // Reseta o formulário após o sucesso do envio
+              this.formulario.reset();
+            },
+            (error: any) => alert('Erro: ' + error)
+          );
+    } else {
+      console.log('Formulário inválido!');
+      this.verificaValidacoesForm(this.formulario);
+    }
+
+  }
+
+  /* Validação de Campos de Forma Recursiva */
+  verificaValidacoesForm(formGroup: FormGroup){
+    Object.keys(formGroup.controls).forEach(
+      campo => {
+        // console.log(campo);
+        const controle = formGroup.get(campo);
+        controle.markAsDirty();
+        if(controle instanceof FormGroup){
+          this.verificaValidacoesForm(controle);
+        }
+      }
+    );
   }
 
   resetar(){
@@ -73,14 +95,13 @@ export class DataFormComponent implements OnInit {
 
   verificaValidTouched(campo: string){
     // this.formulario.controls(campo)
-    return !this.formulario.get(campo).valid && this.formulario.get(campo).touched;
+    return !this.formulario.get(campo).valid && (this.formulario.get(campo).touched || this.formulario.get(campo).dirty);
   }
 
   // Não funcionou corretamente devido a versão do Angular, na versão dois não possui a validação nativa para email, foi necessário substituir pelo pattern
   verificaEmailInvalido(){
     let campoEmail = this.formulario.get('email');
     if (campoEmail.errors){
-      console.log(campoEmail);
       // return campoEmail.errors['email'] && campoEmail.touched;
       return campoEmail.errors['pattern'] && campoEmail.touched;
     }
