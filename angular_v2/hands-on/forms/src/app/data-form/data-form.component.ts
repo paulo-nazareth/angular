@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Http } from '@angular/http';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { DropdownService } from 'app/shared/services/dropdown.service';
+import { EstadoBr } from 'app/shared/models/estado-br';
 
 @Component({
   selector: 'app-data-form',
@@ -10,13 +12,24 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 export class DataFormComponent implements OnInit {
 
   formulario: FormGroup;
+
+  estados: EstadoBr[];
   
   constructor(
     private formBuilder: FormBuilder,
-    private http: Http
+    private http: Http,
+    private dropdowService: DropdownService
   ) { }
 
   ngOnInit() {
+    this.dropdowService.getEstadosBr()
+        .subscribe(
+          dados => { 
+            this.estados = dados; 
+            // console.log(dados);
+          }
+        )
+
     /* 1º Forma de Criar um Formulário */
     // this.formulario = new FormGroup({
     //   nome: new FormControl(null), // Pode ser Informado um Valor Inicial new FormControl('Paulo')
