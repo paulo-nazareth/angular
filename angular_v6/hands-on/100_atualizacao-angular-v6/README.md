@@ -12,13 +12,17 @@ Comandos Executados Durante a Aula para a Atualização
 
 ```bash
 # Atualização Angular CLI (atualizar no Package.json)
+npm install --save-dev @angular/cli@lasted
 npm install --save-dev @angular/cli@6.1.5
 
 # Mostrar as Atualizações Disponíveis
 ng update -d
 
-ng update @angular/cli@6.1.10 @angular/core@6.1.10
+ng update @angular/cli@6.1.10
+ng update @angular/core@6.1.10
 ```
+
+![angular-cli-versions](assets/angular-cli-versions.png)
 
 No Angular versão 6 (e em versões legadas da CLI baseadas no Webpack), não existe uma flag -d (dry-run) direta no comando ng update para simular o processo de atualização de pacotes dentro da mesma versão.
 
@@ -50,13 +54,56 @@ cmd /C "set "NG_DISABLE_VERSION_CHECK=1" && npx @angular/cli@6 update @angular/c
 ```bash
 cmd /C "set "NG_DISABLE_VERSION_CHECK=1" && npx @angular/cli@6 update @angular/cli@6 @angular/core@6"
 ```
-    Após a atualização, o TypeScript e o RxJS irão distribuir os tipos de forma mais precisa em sua aplicação, o que pode expor erros existentes nas tipagens da sua aplicação.
+
+Após a atualização, o TypeScript e o RxJS irão distribuir os tipos de forma mais precisa em sua aplicação, o que pode expor erros existentes nas tipagens da sua aplicação.
 
 ### Após a atualização
 
 Remova recursos obsoletos do RxJS 5 usando regras de atualização automática do rxjs-tslint.
 
 Para a maioria das aplicações, isso significará executar os dois comandos a seguir:
+
 ```bash
 npx rxjs-tslint rxjs-5-to-6-migrate -p src/tsconfig.app.json
 ```
+
+    **Nota**: Comandos não funcionaram...
+
+### Exceção e Solução Aplicada
+
+Infelizmente no momento as opções de upgrade utilizadas não se aplicam tendo em vista que a ultima versão atual encontra-se no Angular v22.
+
+Devido a limitação do processo de upgrade de versões legadas na atualidade, foi necessário remover o `angular-cli.json` manualmente e criar o arquivo `angular.json`.
+Constatado também que a necessidade de criar o arquivo `tsconfig.app.json`, arquivos e configurações disponiveis nos **assets**.
+
+### Comandos de Atualização (Tentativa e Erro)
+
+```bash
+# Atualização Angular CLI (atualizar no Package.json)
+npm install --save-dev @angular/cli@6.1.5
+
+# Atualizar Versão dos package.json
+npm install @angular/animations@^6.1.10 @angular/common@^6.1.10 @angular/compiler@^6.1.10 @angular/compiler-cli@^6.1.10 @angular/core@^6.1.10 @angular/forms@^6.1.10 @angular/http@^6.1.10 @angular/platform-browser@^6.1.10 @angular/platform-browser-dynamic@^6.1.10 @angular/platform-server@^6.1.10 @angular/router@^6.1.10 typescript@">=2.7.2 <2.8.10"
+
+npm install -g @angular/cli@6.2.9
+npm install --save-dev @angular/cli@6.2.9
+
+npm install @angular-devkit/build-angular@~0.6.8 --save-dev
+
+npm install typescript@~2.9.2 --save-dev
+
+# Baixar as dependências do módulo node_modules
+npm install
+```
+
+### Problemas identificados:
+
+1. `rxjs` está na versão `^5.5.12` — precisa ser atualizado para `^6.x`
+2. `rxjs-compat` está com versão errada (`^6.0.0-rc.0`), precisa ser `^6.1.0`
+3. `import 'rxjs/add/operator/map'` no `template-form.component.ts` é sintaxe RxJS 5, incompatível com v6
+4. `.map(res => res)` encadeado no `HttpClient`, no RxJS 6 precisa usar `pipe(map(...))`
+5. `import { Http, Response } from '@angular/http'` no `dropdown.service.ts`, módulo deprecated
+
+Versões Utilizadas
+
+![angular-cli-versions-utilizadas](assets/angular-cli-versions-utilizadas.png)

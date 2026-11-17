@@ -1,9 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { NgForm, NgModel } from '@angular/forms';
-// import { Http } from '@angular/http';
-
-import 'rxjs/add/operator/map';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-template-form',
@@ -31,7 +29,7 @@ export class TemplateFormComponent implements OnInit {
     // console.log(this.usuario);
     // this.http.post('endereco-servidor/form-usuario', JSON.stringify(formulario.value))
     this.http.post('https://httpbin.org/post', JSON.stringify(formulario.value))
-        .map(res => res)
+        .pipe(map(res => res))
         .subscribe(
           dados => {
             console.log(dados);

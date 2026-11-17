@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-// import { Http } from '@angular/http';
 import { HttpClient } from '@angular/common/http';
 
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { map } from 'rxjs/operators';
 import { DropdownService } from 'app/shared/services/dropdown.service';
 import { EstadoBr } from 'app/shared/models/estado-br';
 
@@ -28,6 +28,7 @@ export class DataFormComponent implements OnInit {
     this.dropdowService.getEstadosBr()
         .subscribe(
           dados => { 
+            console.log(dados);
             this.estados = dados;
           }
         )
@@ -56,7 +57,7 @@ export class DataFormComponent implements OnInit {
           .post(
             'https://httpbin.org/post', 
             JSON.stringify(this.formulario.value)
-          ).map(res => res)
+          ).pipe(map(res => res))
           .subscribe(
             dados => {
               console.log(dados);
