@@ -10,7 +10,7 @@ Atualizando a Versão do Angular 4.4 para Versão 6.1, com complexidade básica 
 
 ### URL de Acesso
 
-[https://angular.dev/update-guide?v=2.4-4.0&l=1](https://angular.dev/update-guide)
+[https://angular.dev/update-guide?v=4.4-6.1&l=1](https://angular.dev/update-guide)
 
         **Nota**: Certifique-se de seguir o guia abaixo para migrar seu aplicativo para a nova versão. Não é possível executar o comando `ng update` para atualizar aplicativos Angular em mais de uma versão principal por vez.
 
