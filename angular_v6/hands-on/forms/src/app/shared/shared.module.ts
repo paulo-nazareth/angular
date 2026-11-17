@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 import { FormDebugComponent } from './form-debug/form-debug.component';
 import { CampoControlErroComponent } from './campo-control-erro/campo-control-erro.component';
 import { DropdownService } from './services/dropdown.service';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
+// import { HttpModule } from '@angular/http';
 
 @NgModule({
   imports: [
     CommonModule,
-    HttpModule
+    // HttpModule (Deprecate)
+    HttpClientModule
   ],
   declarations: [
     FormDebugComponent,

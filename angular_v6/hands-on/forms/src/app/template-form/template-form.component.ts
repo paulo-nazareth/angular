@@ -1,6 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { NgForm, NgModel } from '@angular/forms';
-import { Http } from '@angular/http';
+// import { Http } from '@angular/http';
 
 import 'rxjs/add/operator/map';
 
@@ -16,7 +17,10 @@ export class TemplateFormComponent implements OnInit {
     email: ""
   }
 
-  constructor(private http: Http) { }
+  constructor(
+    // private http: Http (Deprecate)
+    private http: HttpClient
+  ) { }
 
   ngOnInit() {
   }
@@ -65,7 +69,7 @@ export class TemplateFormComponent implements OnInit {
 
           // this.http.get("https://viacep.com.br/ws/"+ cep +"/json"); Substituido pelo Template Literal, exemplo abaixo
           this.http.get(`https://viacep.com.br/ws/${cep}/json`)
-            .map(dados => dados.json())
+            // .map(dados => dados.json())
             // .subscribe(function(dados){});
             .subscribe(dados => this.popularDadosForm(dados, form));
         }

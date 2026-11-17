@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Http } from '@angular/http';
+// import { Http } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
+
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { DropdownService } from 'app/shared/services/dropdown.service';
 import { EstadoBr } from 'app/shared/models/estado-br';
@@ -17,7 +19,8 @@ export class DataFormComponent implements OnInit {
   
   constructor(
     private formBuilder: FormBuilder,
-    private http: Http,
+    // private http: Http, (Deprecate)
+    private http: HttpClient,
     private dropdowService: DropdownService
   ) { }
 
@@ -25,8 +28,7 @@ export class DataFormComponent implements OnInit {
     this.dropdowService.getEstadosBr()
         .subscribe(
           dados => { 
-            this.estados = dados; 
-            // console.log(dados);
+            this.estados = dados;
           }
         )
       
@@ -124,7 +126,7 @@ export class DataFormComponent implements OnInit {
 
           // this.http.get("https://viacep.com.br/ws/"+ cep +"/json"); Substituido pelo Template Literal, exemplo abaixo
           this.http.get(`https://viacep.com.br/ws/${cep}/json`)
-            .map(dados => dados.json())
+            // .map(dados => dados.json())
             // .subscribe(function(dados){});
             .subscribe(dados => this.popularDadosForm(dados));
         }

@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+// import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { TemplateFormComponent } from './template-form.component';
 import { SharedModule } from 'app/shared/shared.module';
@@ -12,7 +13,8 @@ import { SharedModule } from 'app/shared/shared.module';
   imports: [
     CommonModule,
     FormsModule,
-    HttpModule,
+    // HttpModule, (Deprecate)
+    HttpClientModule,
     SharedModule
   ],
   declarations: [
