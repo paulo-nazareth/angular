@@ -19,7 +19,15 @@ npm install --save-dev @angular/cli@6.1.5
 ng update -d
 
 ng update @angular/cli@6.1.10
+
+# O angular/core exigiu a atualização do codelyzer
+npm install codelyzer@^4.5.0 --save-dev
+
 ng update @angular/core@6.1.10
+
+# Apresentou falha no typescript (ERROR)
+npm install -g rxjs-tslint@0.1.5
+rxjs-5-to-6-migrate -p src/tsconfig.app.json
 ```
 
 ![angular-cli-versions](assets/angular-cli-versions.png)
@@ -64,7 +72,8 @@ Remova recursos obsoletos do RxJS 5 usando regras de atualização automática d
 Para a maioria das aplicações, isso significará executar os dois comandos a seguir:
 
 ```bash
-npx rxjs-tslint rxjs-5-to-6-migrate -p src/tsconfig.app.json
+npx rxjs-tslint 
+rxjs-5-to-6-migrate -p src/tsconfig.app.json
 ```
 
     **Nota**: Comandos não funcionaram...
@@ -104,6 +113,24 @@ npm install
 4. `.map(res => res)` encadeado no `HttpClient`, no RxJS 6 precisa usar `pipe(map(...))`
 5. `import { Http, Response } from '@angular/http'` no `dropdown.service.ts`, módulo deprecated
 
-Versões Utilizadas
+#### Versões Utilizadas
 
 ![angular-cli-versions-utilizadas](assets/angular-cli-versions-utilizadas.png)
+
+### Verificar Versões Desatualizadas
+
+```bash
+# Instalar ncu
+npm install -g ncu
+
+# Verifica os pacotes desatualizados 
+ncu
+```
+
+### Link Tutorial de Migração Loiane
+
+[https://loiane.com/2018/05/upgrading-to-angular-v6/](https://loiane.com/2018/05/upgrading-to-angular-v6/)
+
+Backup
+
+![upgrading-to-angular-v6](assets/upgrading-to-angular-v6.html)

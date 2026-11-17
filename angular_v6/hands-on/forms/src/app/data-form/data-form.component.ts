@@ -57,7 +57,8 @@ export class DataFormComponent implements OnInit {
           .post(
             'https://httpbin.org/post', 
             JSON.stringify(this.formulario.value)
-          ).pipe(map(res => res))
+          )
+          .pipe(map(res => res))
           .subscribe(
             dados => {
               console.log(dados);

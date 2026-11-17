@@ -5,12 +5,12 @@ Repositorio Angular, contendo as anotações das aulas e respectivo código font
 ### Temas Abordados
 
 1. Introdução
-2. Componentes e Templates
-3. Data binding
+2. Data binding
+3. Componentes e Templates
 4. Diretivas
 5. Serviços
-6. Formulários
-7. Roteamento
+6. Roteamento
+7. Formulários
 8. Integração com servidor
 9. CRUD Metre-Detalhe
 
@@ -98,9 +98,9 @@ https://v2.angular.io/docs/ts/latest/
 
 Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre a seta para expandir todos os items.
 
-### Introdução
-<!-- <details>
-    <summary><b>Introdução</b></summary> -->
+### 1. Introdução
+<details>
+    <summary><b>Introdução</b></summary>
 
 * [01 - Introdução + Arquitetura](angular_v2/hands-on/01_introducao_arquitetura/README.md)
 * [02 - Ambiente de Desenvolvimento (Node.Js, TypeScript, Angular CLI)](angular_v2/hands-on/02_ambiente-desenvolvimento/README.md)
@@ -111,11 +111,11 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [07 - Serviços (Services) e Injeção de dependência (DI)](angular_v2/hands-on/07_servicos-injecao-dependencia/README.md)
 * [08 - Dica de Produtividade: Plugins Angular, code snippets](angular_v2/hands-on/08_dicas-plugins-e-temas/README.md)
 
-<!-- </details> -->
+</details>
 
-### Data binding e eventos
-<!--<details>
-    <summary><b>Data binding e eventos</b></summary> -->
+### 2. Data binding e eventos
+<details>
+    <summary><b>Data binding e eventos</b></summary>
 
 * [09 - Property binding + Interpolation](angular_v2/hands-on/09_property-binding-interpolation/README.md)
 * [10 - Class e Style binding](angular_v2/hands-on/10_class-style-binding-css/README.md)
@@ -126,12 +126,12 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [15 - Ciclo de vida (life-cycle) do Componente](angular_v2/hands-on/15_ciclo-de-vida-componente/README.md)
 * [16 - Acesso ao DOM e ao Template com ViewChild](angular_v2/hands-on/16_dom-template-viewchild/README.md)
 * Extra: Atualizações do RC 5 e ngModule
-<!-- 
-</details> -->
 
-### Angular CLI: Introdução
-<!-- <details>
-    <summary><b>Angular CLI: Introdução</b></summary> -->
+</details>
+
+### 3. Componentes e Templates - Angular CLI: Introdução
+<details>
+    <summary><b>Angular CLI: Introdução</b></summary>
 
 * [17 - Angular CLI: Instalação e Criação de Projetos: ng new e ng serve](angular_v2/hands-on/17_angular-cli/README.md)
 * [18 - Angular CLI: Criando Components, Services: ng generate](angular_v2/hands-on/18_angular-cli-ng-generate/README.md)
@@ -142,11 +142,11 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [22 - Angular CLI: Gerando build de Produção](angular_v2/hands-on/22_gerando-build-dev-producao/README.md)
 * [23 - Angular CLI: instalando bibliotecas (bootstrap, materialize, lodash, jquery, etc)](angular_v2/hands-on/23_instalando-bibliotecas/README.md)
 
-<!-- </details> -->
+</details>
 
-### Diretivas
-<!-- <details>
-    <summary><b>Diretivas</b></summary> -->
+### 4. Diretivas
+<details>
+    <summary><b>Diretivas</b></summary>
 
 * [24 - Introdução e tipos de diretivas no Angular 2](angular_v2/hands-on/24_introducao-diretivas/README.md)
 * [25 - Diretivas - ngIf](angular_v2/hands-on/25_diretiva-ngif/README.md)
@@ -162,11 +162,11 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [35 - Input e Property Binding de Diretivas](angular_v2/hands-on/35_diretiva-input-property-binding/README.md)
 * [36 - Criando uma diretiva de estrutura (ngElse)](angular_v2/hands-on/36_criando-diretiva-ngelse/README.md)
 
-<!-- </details> -->
+</details>
 
-### Serviço (Service) e Injeção de Dependência (DI)
-<!-- <details>
-    <summary><b>Serviço (Service) e Injeção de Dependência (DI)</b></summary> -->
+### 5. Serviços
+<details>
+    <summary><b>Serviço (Service) e Injeção de Dependência (DI)</b></summary>
 
 * [37 - Introdução a Serviços (Services)](angular_v2/hands-on/37_introducao-services/README.md)
 * [38 - Criando um Serviço (Service)](angular_v2/hands-on/38_criando-servico/README.md)
@@ -175,11 +175,11 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [41 - Comunicação Entre Componentes Usando Serviços (broadcast e eventos)](angular_v2/hands-on/41_comunicacao-componentes/README.md)
 * [42 - Injetando um Serviço em outro Serviço](angular_v2/hands-on/42_injecao-servico-outro-servico/README.md)
 
-<!-- </details> -->
+</details>
 
-### Pipes
-<!-- <details>
-    <summary><b>Pipes</b></summary> -->
+### 5.1. Pipes
+<details>
+    <summary><b>Pipes</b></summary>
 
 * [43 - Pipes (usando pipes, parâmetros e pipes aninhados)](angular_v2/hands-on/43_pipes-aninhados-parametros/README.md)
 * [44 - Criando um Pipe](angular_v2/hands-on/44_criando-pipe/README.md)
@@ -188,11 +188,11 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [47 - Pipes - Criando um Pipe "Impuro"](angular_v2/hands-on/47_pipe-impuro/README.md)
 * [48 - Pipes: Async](angular_v2/hands-on/48_pipe-async/README.md)
 
-<!-- </details> -->
+</details>
 
-### Rotas
-<!-- <details>
-    <summary><b>Rotas</b></summary> -->
+### 6. Roteamento
+<details>
+    <summary><b>Rotas</b></summary>
 
 * [49 - Rotas: Introdução](angular_v2/hands-on/49_rotas-introducao/README.md)
 * [50 - Rotas: Configurando Rotas Simples](angular_v2/hands-on/50_rotas-simples-configuracao/README.md)
@@ -218,11 +218,11 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [70 - Definindo Rota Padrão e Wildcard (Rota Não Encontrada)](angular_v2/hands-on/70_rotas-wildcard/README.md)
 * [71 - Estilo de URL: HTML5 ou usando #](angular_v2/hands-on/71_rotas-usando-hash/README.md)
 
-<!-- </details> -->
+</details>
 
-### Formulários (Templates)
-<!-- <details>
-    <summary><b>Formulários (Templates)</b></summary> -->
+### 7. Formulários
+<details>
+    <summary><b>Formulários (Templates)</b></summary>
 
 * [72 - Formulários (template vs data / reativo) Introdução](angular_v2/hands-on/72_formularios-template-drive/README.md)
 * [73 - Formulários - Criando o Projeto Inicial com Bootstrap 3](angular_v2/hands-on/73_formularios-projeto-inicial/README.md)
@@ -241,9 +241,9 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [86 - Forms (template driven) Populando Campos com setValue e patchValue (CEP)](angular_v2/hands-on/86_formularios-setValue-patchValue/README.md)
 * [87 - Forms (template driven) Submetendo Valores com HTTP POST](angular_v2/hands-on/87_formularios-http-post/README.md)
 
-<!-- </details> -->
+</details>
 
-### Formulários (Reativos)
+### 7.1. Formulários (Reativos)
 <!-- <details>
     <summary><b>Formulários (Reativos)</b></summary> -->
 
@@ -261,6 +261,7 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 * [99 - Formulários Reativos: Verificar Validação dos Campos com Botão submit](angular_v2/hands-on/99_formularios-reativo-submit-validacao/README.md)
 * [100 - Formulários: Criando um Serviço de Estados Brasileiros](angular_v2/hands-on/100_formularios-reativo-servico-estados/README.md)
 * [Extra: Atualização Angular: Atualizando para Angular versão 4.4](angular_v4/hands-on/100_atualizacao-angular-v4/README.md)
+* [Extra: Atualização Angular: Atualizando para Angular versão 5.2](angular_v5/hands-on/100_atualizacao-angular-v5/README.md)
 * [Extra: Atualização Angular: Atualizando para Angular versão 6.1](angular_v6/hands-on/100_atualizacao-angular-v6/README.md)
 * 101 - Formulários: Serviço de Consulta CEP + provideIn
 * 102 - Formulários Reativos: Combobox Simples (select)
@@ -281,7 +282,7 @@ Para visualizar a lista de aulas do tópico e ter acesso aos links, clique sobre
 
 <!-- </details> -->
 
-### Integração com Server
+### 8. Integração com Server
 <!-- <details>
     <summary><b>Integração com server</b></summary> -->
 
