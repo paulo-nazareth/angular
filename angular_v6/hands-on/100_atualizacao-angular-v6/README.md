@@ -121,10 +121,15 @@ npm install
 
 ```bash
 # Instalar ncu
-npm install -g ncu
+npm install -g npm-check-updates@3.1.24
+
+npx npm-check-updates@3.1.24 -t minor
+
+# Já aplicar as versões diretamente no JSON
+npx npm-check-updates@3.1.24 -u -t minor
 
 # Verifica os pacotes desatualizados 
-ncu
+ncu -t minor
 ```
 
 ### Link Tutorial de Migração Loiane
