@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { NgForm, NgModel } from '@angular/forms';
 import { map } from 'rxjs/operators';
+import { ConsultaCepService } from '../shared/services/consulta-cep.service';
 
 @Component({
   selector: 'app-template-form',
@@ -17,7 +18,8 @@ export class TemplateFormComponent implements OnInit {
 
   constructor(
     // private http: Http (Deprecate)
-    private http: HttpClient
+    private http: HttpClient,
+    private cepService: ConsultaCepService
   ) { }
 
   ngOnInit() {
@@ -54,23 +56,12 @@ export class TemplateFormComponent implements OnInit {
   }
 
   consultaCEP(cep: string, form: NgForm){
-    console.log(cep);
     //Nova variável "cep" somente com dígitos.
     var cep = cep.replace(/\D/g, '');
     //Verifica se campo cep possui valor informado.
-    if (cep != "") {
-        //Expressão regular para validar o CEP.
-        var validacep = /^[0-9]{8}$/;
-        //Valida o formato do CEP.
-        if(validacep.test(cep)) {
-          this.resetaDadosForm(form);
-
-          // this.http.get("https://viacep.com.br/ws/"+ cep +"/json"); Substituido pelo Template Literal, exemplo abaixo
-          this.http.get(`https://viacep.com.br/ws/${cep}/json`)
-            // .map(dados => dados.json())
-            // .subscribe(function(dados){});
-            .subscribe(dados => this.popularDadosForm(dados, form));
-        }
+    if (cep != null && cep !== "") {
+      this.cepService.consultaCEP(cep)
+        .subscribe(dados => this.popularDadosForm(dados, form));
     }
   }
 
@@ -95,6 +86,7 @@ export class TemplateFormComponent implements OnInit {
         endereco: {
           cep: dados.cep,
           rua: dados.logradouro,
+          numero: 0,
           complemento: dados.complemento,
           bairro: dados.bairro,
           cidade: dados.localidade,

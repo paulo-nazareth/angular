@@ -5,6 +5,7 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 import { map } from 'rxjs/operators';
 import { DropdownService } from 'app/shared/services/dropdown.service';
 import { EstadoBr } from 'app/shared/models/estado-br';
+import { ConsultaCepService } from '../shared/services/consulta-cep.service';
 
 @Component({
   selector: 'app-data-form',
@@ -21,7 +22,8 @@ export class DataFormComponent implements OnInit {
     private formBuilder: FormBuilder,
     // private http: Http, (Deprecate)
     private http: HttpClient,
-    private dropdowService: DropdownService
+    private dropdowService: DropdownService,
+    private cepService: ConsultaCepService
   ) { }
 
   ngOnInit() {
@@ -117,21 +119,10 @@ export class DataFormComponent implements OnInit {
   consultaCEP(){
     var cepControl = this.formulario.get('endereco.cep');
     var cep = cepControl ? cepControl.value : ''.replace(/\D/g, '');
-
-    //Verifica se campo cep possui valor informado.
-    if (cep != "") {
-        //Expressão regular para validar o CEP.
-        var validacep = /^[0-9]{8}$/;
-        //Valida o formato do CEP.
-        if(validacep.test(cep)) {
-          this.resetar();
-
-          // this.http.get("https://viacep.com.br/ws/"+ cep +"/json"); Substituido pelo Template Literal, exemplo abaixo
-          this.http.get(`https://viacep.com.br/ws/${cep}/json`)
-            // .map(dados => dados.json())
-            // .subscribe(function(dados){});
-            .subscribe(dados => this.popularDadosForm(dados));
-        }
+    // Verifica se campo cep possui valor informado.
+    if (cep != null && cep !== "") {
+      this.cepService.consultaCEP(cep)
+        .subscribe(dados => this.popularDadosForm(dados));
     }
   }
 
