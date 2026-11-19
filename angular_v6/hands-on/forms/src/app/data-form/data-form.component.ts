@@ -6,6 +6,7 @@ import { map } from 'rxjs/operators';
 import { DropdownService } from 'app/shared/services/dropdown.service';
 import { EstadoBr } from 'app/shared/models/estado-br';
 import { ConsultaCepService } from '../shared/services/consulta-cep.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-data-form',
@@ -16,7 +17,8 @@ export class DataFormComponent implements OnInit {
 
   formulario: FormGroup;
 
-  estados: EstadoBr[];
+  // estados: EstadoBr[];
+  estados: Observable<EstadoBr[]>;
   
   constructor(
     private formBuilder: FormBuilder,
@@ -27,13 +29,8 @@ export class DataFormComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.dropdowService.getEstadosBr()
-        .subscribe(
-          dados => { 
-            console.log(dados);
-            this.estados = dados;
-          }
-        )
+    // this.dropdowService.getEstadosBr().subscribe(dados => { this.estados = dados; });
+    this.estados = this.dropdowService.getEstadosBr();
       
     this.formulario = this.formBuilder.group({
       // nome: [ null, [ Validators.required, Validators.minLength(3), Validators.maxLength(200) ] ],
